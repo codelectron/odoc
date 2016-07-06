@@ -9,4 +9,10 @@ if [ $CMD_COUNT -ne 1 ]; then
 	echo "Example : $ odoc top"
 	exit 0
 fi
+if [ ! -f  $ODOC_PATH/$CMD_FILE ]; then
+	echo " File not found!"
+	echo " Would you like to contribute?"
+	echo " Then create a new issue at https://github.com/codelectron/odoc/issues/new"
+  	exit 1
+fi
 less $ODOC_PATH/$CMD_FILE
