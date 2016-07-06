@@ -1,0 +1,24 @@
+One Day One Command 
+===================
+
+host -- DNS Look-up Utility
+
+Summary:
+
+host is a simple utility for performing DNS (Domain Name Service)  
+lookups.  It is normally used to convert names to IP addresses and
+vice versa.
+
+Examples:
+
+$ host google.com -- Show the IP Address of Google.com.
+
+$ host -v google.com -- Show detailed output.
+
+$ host -a google.com -- Show more details.
+
+$ host 127.0.0.1 -- Do reverse lookup and Show the host name.
+
+$ host -l mydomain.com -- List all hosts available in MyDomain.
+
+Read: man host

@@ -1,0 +1,32 @@
+One Day One Command
+===================
+
+unzip -- List, Test & Extract compressed files in a ZIP format.
+
+Summary:
+
+unzip will list, test, or extract files from a ZIP archive. The
+default behavior (with no options) is to extract into the current
+directory (and subdirectories below it)  all files from the specified
+ZIP archive. Read man zip.
+
+Example:
+
+$ unzip myfile.zip -- Unzip the myfile.zip
+
+$ unzip -t myfile.zip -- Test correctness of the file.
+
+$ unzip myfile \*.txt -- Unzip only *.txt files
+
+$ unzip myfile \*.txt \*.sxi \*.tex -- Unzip only *.txt, *.sxi and 
+                                       *.tex files
+
+$ unzip myfile -d /tmp -- Unzip the files in /tmp Dir. 
+
+$ unzip -f myfile -- Unzip files which are newer then current Dir  
+                     files.
+
+$ unzip -o myfile -- Unzip and overwrite existing files without 
+                     prompting.
+
+Read: man unzip  (Lot of examples are available)

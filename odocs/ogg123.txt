@@ -1,0 +1,44 @@
+One Day One Command 
+===================
+
+ogg123 -- Plays Ogg Vorbis audio files.
+
+Summary:
+
+Ogg Vorbis is a new audio compression format. It is different from
+these other formats because it is completely free, open & unpatented.
+It is roughly comparable to other formats used to store & play digital
+music, such as MP3, VQF, AAC, and other digital audio formats.
+
+ogg123 reads Ogg Vorbis audio files and decodes/play them to the (by
+default) standard sound card or specified device(s). Input files can
+be read from the system, or URLs can be streamed via HTTP.
+
+Press Ctrl C to stop.
+
+Examples:
+
+$ locate .ogg -- Search for some OGG files in your system.
+
+$ ogg123 my.ogg -- Play on the default soundcard.
+
+$ ogg123 -q my.ogg -- Quiet mode. No messages are displayed.
+
+$ ogg123 -v my.ogg -- Verbose mode. Show more info.
+
+$ ogg123 -x 4 my.ogg -- Play the file in 4 time faster.
+
+$ ogg123 -y 2 my.ogg -- Play the file in 2 times slower then the 
+                        normal speed.
+
+$ ogg123 -d esd my.ogg -- Play the file using ESD Device.
+
+$ ogg123 ~/MusicDir -- Play  all of the files in the ~/MusicDir
+                       and its subDirs.
+
+$ ogg123 -d wav -f my.wav my.ogg -- Convert the OGG to WAV.
+
+$ ogg123 -d oss -d wav -f my.wav my.ogg -- Listen to a file while you
+                                           write it to a WAV file.
+
+Read: man ogg123 (More examples are available in man page)

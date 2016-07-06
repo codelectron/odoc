@@ -1,0 +1,22 @@
+One Day One Command
+===================
+
+factor -- Print prime factors
+
+Summary:
+
+Print the prime factors of each number.The algorithm it uses is not
+very sophisticated, so for some inputs `factor' runs for a long time.
+
+Example:
+
+$ factor 25 -- Print prime factors
+
+$ factor 125 200 -- Print prime factors for each number.
+
+$ factor `echo '2^64-1'|bc` -- Factors the largest 64-bit number.
+
+$ factor `echo '4294967279 * 4294967291'|bc` -- Factors the largest
+                 32-bit prime numbers. (Warning: It take more time)
+
+Read: man factor

@@ -1,0 +1,20 @@
+One Day One Command 
+===================
+
+sync -- Flush File System Buffers.
+
+Summary:
+
+The Linux Kernel keeps data in memory to avoid doing (relatively slow)  
+disk reads and writes.  This improves performance, but if the computer
+crashes, data in memory may be lost or the file system corrupted as a
+result.
+
+`sync' used to Synchronize data on disk with memory. 'sync' writes any
+data buffered in memory out to disk.
+
+Examples:
+
+$ sync -- Write buffered data to disk.
+
+Read: man sync

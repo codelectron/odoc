@@ -1,0 +1,32 @@
+One Day One Command 
+===================
+
+dialog -- Show interactive Dialog boxes from shell.
+
+Summary:
+
+Dialog is a program that will let you to present a variety of Qus or
+Messages using dialog boxes from a shell script. 
+
+Following dialog box types are in-build in dialog command (calendar,
+checklist, fselect, gauge, infobox, inputbox, menu, msgbox, password,
+radiolist, tailbox, tailboxbg, textbox, timebox, and yesno).
+
+Examples:
+
+$ dialog --title "Hello" --msgbox "Bharathi" 20 40 -- Message box.
+
+$ dialog --title "Input Box" --inputbox "My Name" 10 20 Bharathi -- 
+  Input Box.
+
+$ dialog --title "CAL" --calendar "Set Date" 0 0 22 8 2005 -- Calendar.
+
+$ dialog --title "Yes/No" --yesno "Say yes or no" 15 61 -- YesNo box.
+
+$ dialog --title "Please choose a file" --fselect $HOME/ 20 40 -- File 
+  Select Box.
+
+$ dialog --title "TIMEBOX" --timebox "Set Time" 0 0 12 34 56 -- Time
+  Box.
+
+Read: man dialog  & /usr/share/doc/dialog-XYZ/

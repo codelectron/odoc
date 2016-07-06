@@ -1,0 +1,26 @@
+One Day One Command 
+===================
+
+play -- Play the sound file.
+
+Summary:
+
+Play different types of sound files from the command line. It is a
+front end to the more general sox package. Normally, the play will
+automatically try to detect the type and other parameters of the sound
+file.
+
+Examples:
+
+$ play snd.wav -- Play the wave file.
+
+$ play snd.aiff -- Play the AIFF file.
+
+$ play snd.wav echo .5 .5 100 .5 -- Play with echo effect.
+
+$ play snd.wav reverb 1 1000 333 333 333 333 -- Play with reverb 
+                                                effect.
+
+$ play -v 2 snd.wav -- Change the volume and play.
+
+Read: man play

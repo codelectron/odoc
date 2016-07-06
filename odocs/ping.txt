@@ -1,0 +1,38 @@
+One Day One Command :-
+====================
+
+ping -- send ICMP ECHO_REQUEST to network hosts
+
+Summary :
+
+Packet InterNet Groper  uses the ICMP protocol's mandatory 
+ECHO_REQUEST datagram to elicit an ICMP ECHO_RESPONSE from 
+a host or gateway to find whether it is alive or not. See 
+http://ftp.arl.mil/~mike/ping.html (Thanks Vijaykumar).
+
+Example:
+
+$ ping localhost -- Resolve the IP for localhost and Ping it.
+
+$ ping 127.0.0.1 -- Ping for IP 127.0.0.1
+
+$ ping -a host -- Bell after every successful ping.
+
+$ ping -b 192.168.1.255 -- Ping the broadcast IP.
+
+$ ping -c 6 host -- Stop after sending 6 ECHO_REQUEST packets.
+
+# ping -f host -- Flood ping. Packets will generated with Zero inter 
+                  packet time.
+
+$ ping -i 5 host -- Wait 5 seconds between sending each packet.
+
+$ ping -q host -- Quiet Mode. Only shows initial and end summary.
+
+$ ping -R host -- Record and print the route used by the packets.
+
+$ ping -s 100 host -- Sent 100 bytes ICMP packet. Default 56 Bytes.
+
+$ ping -w 5 host -- Ping for 5 Sec and Exit.
+
+Read: man ping

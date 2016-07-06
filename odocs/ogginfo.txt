@@ -1,0 +1,30 @@
+One Day One Command 
+===================
+
+ogginfo -- Gives information about Ogg files.
+
+Summary:
+
+Ogg Vorbis is a new audio compression format. It is different from
+these other formats because it is completely free, open & unpatented.
+It is roughly comparable to other formats used to store & play digital
+music, such as MP3, VQF, AAC, and other digital audio formats.
+
+ogginfo reads one or more Ogg files and prints information about
+stream contents. It will detect (but not correct)  a wide range of
+common defects, with many additional checks specifically for Ogg
+Vorbis streams.
+
+Examples:
+
+$ locate .ogg -- Search for some OGG files in your system.
+
+$ ogginfo /usr/share/redhat-credits.ogg -- Show the detailed info 
+                                           about that ogg file.
+
+$ ogginfo -q /usr/share/redhat-credits.ogg -- Show warning and errors
+                                              messages.
+
+$ ogginfo -qq /usr/share/redhat-credits.ogg -- Show only errors. 
+
+Read: man ogginfo

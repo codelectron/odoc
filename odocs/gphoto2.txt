@@ -1,0 +1,35 @@
+One Day One Command 
+===================
+
+gphoto2 -- Client to access the Digital cameras.
+
+Summary:
+
+gphoto2 is a command-line client written using the gphoto2 cross
+platform digital camera library. We can access the digital cameras,
+which is connected to a GNU/Linux System thru the USB Port.
+
+Examples:
+
+$ gphoto2 -- Show help message.
+
+$ gphoto2 --list-cameras -- List all supported cameras.
+
+$ gphoto2 --list-ports -- List supported port devices.
+
+$ gphoto2 --auto-detect -- List detected cameras.
+
+$ gphoto2 --camera "USB PTP Class Camera" -- If camera is not auto 
+                            detected the specify the generic type.
+
+$ gphoto2 -a -- Show camera abilities.
+
+$ gphoto2 -P -- Get all files from camera.
+
+$ gphoto2 -p 1,4-6 -- Get only photos 1,4,5,6.
+
+$ gphoto2 -T -- Get all thumbnails images.
+
+$ gphoto2 --debug -- Show more detailed info. Useful to debug.
+
+Read: man gphoto2

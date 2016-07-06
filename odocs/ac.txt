@@ -1,0 +1,17 @@
+One Day One Command :-
+---------------------
+
+ac -  Print statistics about users' connect time
+
+Summary: 
+
+"ac" command will print the users' connect time details in 
+different formats (Total, Per day, Per user, etc..)
+
+Example:
+
+$ ac     -- print total useage.
+$ ac -p  -- print indv user info
+$ ac -dy -- print daily based report.
+
+Read: man ac

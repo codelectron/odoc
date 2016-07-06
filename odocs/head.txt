@@ -1,0 +1,28 @@
+One Day One Command :-
+====================
+
+head - Output the 1st part of files.
+
+Summary : 
+
+Print first 10 lines of each FILE to stdout. With more than one FILE,
+precede each with a header giving the file name.  With no FILE, or
+when FILE is -, read stdin.
+
+Examples :
+
+$ head  -- Read 10 lines from stdin & dump to stdout
+
+$ head midas.txt  -- Show 1st 10 lines of the file.
+
+$ head f1 f2 -- Show 1st 10 lines of file f1 & f2 with header.
+
+$ head -q f1 f2 -- same as above But with-out header.
+
+$ head -n 5 myfile -- Show 1st 5 lines only.
+
+$ head -c 15 myfile -- Show 1st 15Bytes only.
+
+$ head -c 15k myfile -- Show 1st 15KB only.
+
+Read : man head

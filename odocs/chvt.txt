@@ -1,0 +1,26 @@
+One Day One Command 
+===================
+
+chvt -- CHange foreground Virtual Terminal.
+
+Summary:
+
+In GNU/Linux OS, be default, 6 virtual text mode console terminals
+will be running. User can switch between this terminals using Left 
+Side Ctrl + Alt + FunKey(1 - 6).
+
+chvt command is also used to switch between this terminals. It can 
+be used in shell scripts.
+
+Examples:
+
+$ chvt 1 -- Switch from current terminal to /dev/tty1.
+
+$ chvt 2 -- Switch from current terminal to /dev/tty2.
+
+Read: man chvt
+
+TIP: Screen Dump in Text console.
+
+# sudo cat /dev/vcs2 > scrdump.txt  -- Take the screen dump of 
+                                 /dev/tty2 in scrdump.txt file.

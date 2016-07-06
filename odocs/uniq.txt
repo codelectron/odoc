@@ -1,0 +1,41 @@
+The FSF's Campaign for Free BIOS. Use Chips and Main boards that
+support LinuxBIOS - http://www.fsf.org/campaigns/free-bios.html
+See also: http://www.gnu.org/philosophy/can-you-trust.html
+
+One Day One Command :-
+====================
+
+uniq -- Remove duplicate lines from a SORTED file.
+
+Summary :
+
+It prints the unique lines in a sorted file. If input is not sorted
+then, only adjacent duplicate lines are discarded.
+
+Example:
+
+Create 'myfile' with 2 cols of digits for testing.
+
+$ uniq myfile -- Print only unique lines.
+
+$ uniq -i myfile -- Ignore case when comparing.
+
+$ uniq -u myfile -- Print only lines, Which is not duplicated.
+
+$ uniq -c myfile -- Print all unique lines with no .of occurrence.
+
+$ uniq -d myfile -- Print only duplicate lines. If a line duplicated
+                    then, only one line will be printed.
+
+$ uniq -D myfile -- Print all duplicate lines.
+
+$ uniq -w5 myfile -- Use only first 5 Chars for checking the uniqueness 
+                     of the line.
+
+$ uniq -f2 myfile -- Don't compare up-to 2nd field.
+
+$ uniq -s2 myfile -- Don't compare up-to 2nd char.
+
+$ sort myfile | uniq > output -- Sort myfile & store the uniq output.
+
+Read : man uniq

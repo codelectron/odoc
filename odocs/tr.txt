@@ -1,0 +1,30 @@
+One Day One Command :-
+====================
+
+tr - Translate or Delete characters
+
+Summary : 
+
+tr will Translate, squeeze, and/or delete characters from stdin,
+writing to stdout.
+
+Examples :
+
+$ echo "tenet" | tr "nt" "NT" -- Translate n to N & t to T.
+
+$ echo "ilugc" | tr "[a-z]" "[A-Z]" -- Change case (lower to upper)
+
+$ echo "HelloooOOOoooo" | tr -s '[:lower:]' -- Squeez the "lower" case 
+                                               letters.
+
+$ echo "IxLyUzGyC" | tr -d xyz -- Remove xyz
+
+$ cat myfile | tr -s '\n' -- Remove repeated new lines.
+
+$ echo "ABCDEFG" | tr -c "ACEG" "\n" -- Expect "ACEG" translate others 
+                                        to newline char.
+
+'tr' supports few std esc sequences, regular expressions, char classes 
+(lower, upper, space, blank, alpha,...), etc.
+
+Read : man tr

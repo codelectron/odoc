@@ -1,0 +1,29 @@
+One Day One Command 
+===================
+
+oggdec -- Decodes Ogg into PCM Audio format.
+
+Summary:
+
+Ogg Vorbis is a new audio compression format. It is different from
+these other formats because it is completely free, open & unpatented.
+It is roughly comparable to other formats used to store & play digital
+music, such as MP3, VQF, AAC, and other digital audio formats.
+
+oggdec decodes Ogg Vorbis files into PCM-encoded ("uncompressed")  
+audio files, either WAV or RAW format.  For each input file, oggdec
+writes to a filename based on the input filename, but with the extn
+changed to ".wav" or ".raw".
+
+
+Examples:
+
+$ locate .ogg -- Search for some OGG files in your system.
+
+$ oggdec in.ogg -- Decode in.ogg and writes to in.wav file.
+
+$ oggdec --raw=1 in.ogg -- Decode in.ogg and writes to in.raw file.
+
+$ oggdec in.ogg -o out.wav -- Decode in.ogg and writes to out.wav file.
+
+Read: man oggenc

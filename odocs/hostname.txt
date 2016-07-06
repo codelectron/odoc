@@ -1,0 +1,28 @@
+One Day One Command 
+===================
+
+hostname -- Show/Set the system's host name.
+
+Summary:
+
+Hostname is the program that is used to either display or set the
+*current* host, domain or node name of the system.
+
+Examples:
+
+$ hostname -- Display the FQDN (Fully Qualified Domain Name).
+
+$ hostname -a -- Display the alias name of the host.
+
+$ hostname -d -- Display the name of the DNS domain.
+
+$ hostname -i -- Display the IP address(es) of the host.
+
+$ hostname -s -- Display the short host name (Name appear before 1st 
+                 dot)
+
+$ hostname -v -- Be verbose and tell what's going on.
+
+# hostname xyz -- Set the host name as 'xyz'.
+
+Read: man hostname 

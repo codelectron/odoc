@@ -1,0 +1,34 @@
+One Day One Command 
+===================
+
+last -- Show listing of last logged in users.
+
+Summary:
+
+Last searches back through the file, by default, /var/log/wtmp (or -f
+file) and displays a list of all users logged in and out, since that
+file was created. It shows User Name, Terminal No, Host IP, Login 
+Date & Time, Logout Time and Total Time.
+
+Examples:
+
+$ last -- List all entries.
+
+$ last tty6 -- List, who are all logged thru tty6.
+
+$ last pts/6 -- List, who are all logged thru pts/6.
+
+$ last bharathi -- List all entries of bharathi (user).
+
+$ last -6 -- List only last 6 entries.
+
+$ last -R -- Don't show the Host Name field in output.
+
+$ last -a -- Show Host Name field in last column.
+
+$ last -i -- Show IP Number for Remote host.
+
+$ last -t 20050818120000 -- List all entries upto Aug 18 
+                            12:00:00 2005.
+
+Read: man last

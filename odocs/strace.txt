@@ -1,0 +1,49 @@
+One Day One Command 
+===================
+
+strace -- Trace System Calls and Signals.
+
+Summary:
+
+In the simplest case strace runs the specified command until it exits.  
+It intercepts and records the system calls which are called by a
+process and the signals which are received by a process.  The name of
+each system call, its arguments and its return value are printed.
+strace is a useful diagnostic, instructional, and debugging tool.
+
+Examples:
+
+$ strace sleep 1 -- Trace all Sys call of 'sleep' command.
+
+$ strace ls -- Trace all Sys call of 'ls' command.
+
+$ strace -i sleep 1 -- Print the value of the Instruction Pointer at
+                       every sys call.
+
+$ strace -r sleep 1 -- Print a relative time-stamp with each line of
+                       the trace.
+
+$ strace -t sleep 1 -- Prefix each line of the trace with the time of
+                       day.
+
+$ strace -T sleep 1 -- Show time spent on each call.
+
+$ strace -o file sleep 1 -- Redirect the output to a file.
+
+$ strace -c ls -- Count  time,  calls, and errors for each system call
+                   and report a summary on program exit.
+
+$ strace -xx myprg -- Print all strings in HEX format.
+
+$ strace -e trace=file ls -- Trace all system calls which take a
+                             filename as an argument. 
+
+$ strace -e trace=process ls -- Trace all system calls which involve
+                                process management.
+
+$ sleep 60 & -- Dummy background Job.
+
+$ strace -p 1234 -- Attach to the process with the PID 1234 (use 
+                    dummy job's Pid) and trace.
+
+Read: man strace

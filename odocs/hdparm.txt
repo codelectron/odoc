@@ -1,0 +1,22 @@
+One Day One Command 
+===================
+
+hdparm -- Get/Set Hard Disk Parameters.
+
+Summary:
+
+hdparm provides a command line interface to various hard disk ioctls
+supported by the stock Linux ATA/IDE device driver subsystem.
+
+You *MUST* read the man page completely, if you want to do anything
+else, apart from this examples.
+
+Examples:
+
+$ hdparm -i /dev/hda -- Display the identification info that was
+                        obtained from the drive at boot time.
+
+$ hdparm -I /dev/hda -- Request identification info directly from the
+                        drive and display in a new expanded format.
+
+Read: man hdparm

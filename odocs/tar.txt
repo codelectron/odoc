@@ -1,0 +1,44 @@
+One Day One Command
+===================
+
+tar -- Create/Add/Extract Tape ARchives files.
+
+Summary:
+
+tar is an archiving program designed to store and extract files from
+an archive file known as a tar file.  A tar file may be made on a tape
+drive, however, it is also common to write a tar file to a normal file.
+
+Normally ".tar" file is not a compressed files, it is actually a
+collection of files within a single file. ".tar.gz"/ ".tgz" is a
+collection of files in compressed mode.
+
+Example:
+
+$ tar -cf myfile.tar mydir -- Create new tar file.
+
+$ tar -cvf myfile.tar mydir -- With detail output.
+
+$ tar -tvf myfile.tar -- List the content of the tar file.
+
+$ tar -uvf myfile.tar mydir -- Update/Append files that are newer 
+                               than copy in tar.
+
+$ tar -xvf myfile.tar -- Extract the tar file.
+
+$ tar -xvf myfile.tar dir1/file1 -- Extract only file1 from the tar.
+
+$ tar --delete -vf myfile.tar *.doc -- Delete all files with .doc extn
+                                       from tar file.
+
+$ tar --diff -vf myfile.tar mydir -- Differences between archive & mydir
+
+$ tar -czvf myfile.tgz mydir -- Tar and GZip the files.
+
+$ tar -xzvf myfile.tgz -- Extract the tgz file.
+
+$ tar -cZvf myfile.tgz mydir -- Tar and compress the files.
+
+$ tar -xZvf myfile.tgz -- Extract the tgz file.
+
+Read: man tar

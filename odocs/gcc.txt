@@ -1,0 +1,52 @@
+One Day One Command 
+===================
+
+gcc -- GNU C Compiler
+
+Summary:
+
+Several versions of the compiler (C, C++, Objective-C, Ada, Fortran,
+and Java) are integrated; this is why we use the name "GNU Compiler
+Collection". GCC can compile programs written in any of these above
+languages.
+
+This C program is used in the examples.
+
+#define DISPLAY "Hello World\n"
+main()
+{
+ #ifdef MACRO
+    printf(DISPLAY);
+ #else
+    printf("No Macro\n");
+ #endif
+}
+
+Examples:
+
+$ gcc hello.c -- Place output in a.out file.
+
+$ ./a.out -- Run the binary file.
+
+$ gcc -Wall hello.c -- Show all warning messages.
+
+$ gcc -c hello.c -- Compile, Don't Link. Place output in hello.o
+
+$ gcc -S hello.c -- Stop after the stage of compilation proper 
+                    and save the ASM code in hello.s file.
+
+$ gcc -DMACRO hello.c -- Predefine a Macro.
+
+$ gcc -E hello.c -- Stop after the preprocessing stage and print 
+                    output in stdout.
+
+$ gcc hello.c -o hello -- Place output in hello file.
+
+$ ./hello -- Run the binary file.
+
+$ gcc -v hello.c -o hello -- Show the details of compilation stages.
+
+$ gcc -I./myIncludes/ hello.c -- In myIncludes Dir also search for
+                                 the Header files.
+
+Read: man or info gcc

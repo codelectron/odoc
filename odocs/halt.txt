@@ -1,0 +1,24 @@
+One Day One Command 
+===================
+
+halt -- Stop the System.
+
+Summary:
+
+Halt notes that the system is being brought down in the /var/log/wtmp,
+file and then either tells the kernel to halt, reboot or poweroff the
+system. Halt invoke shutdown, if the system is not in runlevel 0 or 6.
+
+Examples:
+
+# halt -- Halt the system.
+
+# halt -f -- Force the Halt.
+
+# halt -i -- Shutdown the Network interface before Halt.
+
+# halt -p -- When Halting the system, Do a Power off.
+
+# poweroff -- Same as above.
+
+Read: man halt

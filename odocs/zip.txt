@@ -1,0 +1,40 @@
+One Day One Command
+===================
+
+zip -- Package and Compress files in Zip format.
+
+Summary:
+
+zip is a compression and file packaging utility. The zip program puts
+one or more compressed files into a single zip archive, along with
+information about the files.
+
+Example:
+
+$ zip stuff * -- Create stuff.zip, add current Dir files in it.
+
+$ zip -r myzip mydir -- Create myzip.zip, add mydir files in it.
+
+$ zip -j myzip mydir/* -- Same as above. But mydir name will not be 
+                      recorded.
+
+$ zip -rm myzip mydir -- Delete the original files after zipping.
+
+$ zip -r myzip mdir -x \*~ -- Exclude all files that end in ~.
+
+$ zip -u stuff *  -- If myzip.zip is already exist then, update new 
+                     and modified files from the current Dir.
+
+$ zip -R foo '*.c' -- Travel the Dirs recursively starting at the
+                     current directory and zip all C files.
+
+$ zip -n .Z:.zip:.tiff:.gif:.snd myzip * -- Create myzip.zip file, add 
+    files from current Dir and Don't try compress the specified files.
+
+$ zip -rt 2005-06-06 myzip mydir -- Zip all the files in foo and its
+              subdirs that were last modified on or AFTER 06-06-2005.
+
+$ zip -rtt 2005-06-06 myzip mydir -- Zip all the files in foo and its
+              subdirs that were last modified BEFORE 06-06-2005.
+
+Read: man zip  (Lot of examples are available)

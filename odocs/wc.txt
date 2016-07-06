@@ -1,0 +1,31 @@
+One Day One Command :-
+====================
+
+wc - Count & Print the No. of Bytes,Words & Lines in files.
+
+Summary :
+
+Print byte, word, and newline counts for each FILE, and a total line
+if more than one FILE is specified.  With no FILE, or when FILE is -,
+read stdin.
+
+Examples :
+
+$ wc  -- Accept the input from stdio and count
+
+$ wc myfile -- Print the no .of bytes, words, lines in the file.
+
+$ wc -l myfile -- Print the newline counts only
+
+$ wc -w myfile -- Print the words count only
+
+$ wc -c myfile -- Print the bytes count only
+
+$ wc -L myfile -- Print the length of the longest line
+
+$ wc f1 f2 f3 -- Print the no .of bytes, words, lines in each file and 
+                 also print the total.
+
+$ ls -1 | wc -l -- Print the total no .of files present in the dir
+
+Read : man wc

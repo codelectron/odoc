@@ -1,0 +1,22 @@
+One Day One Command
+===================
+
+sum -- Compute and Check .
+
+Summary:
+
+`sum' computes a 16-Bit checksum for each given file(s)/stdin. By
+default, it computes checksums using an algorithm compatible with 
+BSD `sum' and prints file sizes in units of 1024-byte blocks.
+
+Example:
+
+$ sum file -- Print checksum and block counts.
+
+$ sum file1 file2 -- Print checksum, block counts and filename.
+
+$ sum -r file -- Default. Use BSD sum algorithm (1KB/Block).
+
+$ sum -s file -- Use System V sum algorithm (512 bytes/Block).
+
+Read: man sum

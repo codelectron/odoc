@@ -1,0 +1,38 @@
+"No Software Patents!" -- Allowing patents over software ideas will
+seriously affect the creativity, productivity and freedom of all.
+Link: http://www.nosoftwarepatents.com/
+
+One Day One Command :-
+====================
+
+fold -- Wrap each input line to fit in specified width.
+
+Summary :
+
+`fold' wrap input lines in each input file and writes the output to
+standard output. `fold' counts screen columns by default.
+
+Examples :
+
+$ fold myfile -- Fold each input line at column 80 and print in the
+                 screen/stdout.
+
+$ fold -w 40 myfile > myfile1 -- Fold each input line at column 40 and
+                                 the output is redirected to myfile1.
+
+$ fold -s -w40 f1 f2 -- Fold each input line of f1 and f2 at column 40
+                        and folding will happen at space only.
+
+$ fold -b 40 myfile -- Folds at 40th byte place.
+
+$ fold -c 40 myfile -- Folds at 40th character position.
+
+
+Note:
+1) Normally all the above options will give same output. Difference
+can be felt only with multi-byte encodings, like UTF-8...
+
+2) A tab may count more than one column, backspace decreases the
+column count, and carriage return sets the column to zero.
+
+Read : man fold

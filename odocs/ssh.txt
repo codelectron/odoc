@@ -1,0 +1,34 @@
+One Day One Command 
+===================
+
+ssh -- OpenSSH SSH Client
+
+Summary:
+
+ssh (SSH client) is a program for logging into a remote machine and
+for executing commands on a remote machine. It is intended to replace
+rlogin, rsh and telnet, and provide secure encrypted communications
+between two untrusted hosts over an insecure network. The SSH Daemon
+must be running in the Remote computer to successfully connect to it.
+
+Examples:
+
+$ ssh MyServer -- Connect to MyServer with current login name.
+
+$ ssh -l user1 MyServer -- Connect to MyServer with UserName user1.
+
+$ ssh user1 at MyServer -- Same as Above.
+
+$ ssh -c 3des MyServer -- Use 3DES encryption (Default).
+
+$ ssh MyServer -p 22 -- Connect to MyServer thru Port #22 (Default).
+
+$ ssh -X MyServer -- Connect to MyServer with X11 Event forwarding. 
+        Using this, You can run X Applications from remote machine.
+
+$ ssh -v MyServer -- Show more debug messages.
+
+$ ssh MyServer 'who' -- Connect and run the `who' command in MyServer
+                        and exit.
+
+Read: man ssh

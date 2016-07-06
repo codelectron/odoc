@@ -1,0 +1,26 @@
+One Day One Command :-
+-------------------
+
+comm - Compare 2 Sorted files line by line
+
+Summary : 
+
+Compare two sorted files F1 and F2 line by line.
+
+Examples :
+
+$ comm F1 F2 -- Output contain 3 col. 
+                Col 1 - Uniq to F1, Col 2 - Uniq to F2 
+                and Col 3 - Comman to F1 & F2
+
+$ comm -1 F1 F2 -- Suppress lines unique to F1
+
+$ comm -2 F1 F2 -- Suppress lines unique to F2
+
+$ comm -3 F1 F2 -- Suppress comman lines to F1 & F2
+
+$ comm -13 F1 F2 -- Show lines from F2, which is not in F1
+
+$ comm -23 F1 F2 -- Show lines from F1, which is not in F2
+
+Read : man comm

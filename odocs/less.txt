@@ -1,0 +1,48 @@
+One Day One Command (Contributed by Narendran K) :-
+===================================================
+
+less -- Filter for paging through text one screen full at a time.
+
+Summary:
+
+It is a filter for showing the text in page by page format to user. It
+supports No. of commands for screen operations, different prompts and
+Input Preprocessing. Less will show big files in faster manner.
+
+Example:
+
+$ less myfile -- Show the file content in page by page format.
+
+$ less -c myfile -- Clear the screen before showing next screen.
+
+$ less -q myfile -- Exit after 2nd time reaches end-of-file.
+
+$ less -G myfile -- High-lite all searched strings.
+
+$ less -pMail myfile -- Start at the 1st occurrence of pattern "Mail"
+
+$ less -P%B myfile -- Last line prompt will show the file size.
+
+$ less xyz.rpm -- RPM file infos.
+
+$ less xyz.tar -- List all files in the tar file.
+
+$ less xyz.zip -- List all files in the Zip file.
+
+Commands:
+
+1) Press q to exit from less.
+2) Press ! to execute the shell command
+3) Press !! to rerun the last shell command
+4) Press ^l to refresh the screen.
+5) Press /pattern for search.
+
+Note:
+
+1) User can write own preprocessing script by editing lesspipe.sh.
+2) User can build own key mapping by running lesskey command.
+3) If env variable LESSSECURE is set to 1, then it runs in a "Secure"
+   mode. No Shell, Pipe, Examine and Editing command are disabled.
+4) Less will not read entire file content in 1st read.
+
+Read: man less

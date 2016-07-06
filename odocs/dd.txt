@@ -1,0 +1,41 @@
+One Day One Command 
+===================
+
+dd -- Convert and copy a file.
+
+Summary:
+
+'dd' copies and optionally converts data with changeable I/O block
+size. Reads are issued to the input file or device for the size of
+the input buffer and writes are issued for the size of the output
+buffer. This allows I/O requests to be tailored to the requirements of
+a task. Output to standard error reports the number of full and short
+blocks read and written.
+
+Examples:
+
+$ dd if=/dev/urandom of=ddfile bs=1 count=100 -- Dump random bytes in 
+                                                 the file.
+
+$ dd if=/dev/zero of=/dev/fd0 -- Format a floppy disk
+
+$ dd if=/dev/fd0 of=/tmp/floppy.image -- Take floppy disk image.
+
+$ echo "12345678901234567890" | dd bs=1 skip=5 count=10 -- Skip 5 
+                          bytes in input and output only 10 Bytes.
+
+$ echo "hello world" | dd cbs=1 conv=unblock -- Take one byte at a 
+time and dump it in stdout with a new line.
+
+$ echo "hello world" | dd conv=ucase -- Change to Upper case.
+
+$ echo "HELLO WORLD" | dd conv=lcase -- Change to Lower case.
+
+$ echo "12345678901234567890" > ddfile -- Dummy file.
+
+$ echo "AAAAAAA" | dd bs=1 seek=5 of=ddfile count=5 conv=notrunc -- 
+Seek 5 bytes in output file and copy only 5 from input to output file.
+
+NOTE: You can use a some input file instead of echo command.
+
+Read: man dd

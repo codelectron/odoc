@@ -1,0 +1,43 @@
+One Day One Command :-
+====================
+
+cd -- Change the Current Directory
+
+Summary : 
+
+cd is bash shell's built-in command. It is used to change the present
+working Dir to specific Dir.
+
+Examples :
+
+$ cd -- Change the current Dir to $HOME ($HOME is the default).
+
+$ cd ~ -- Same as above.
+
+$ cd ~sbharathi -- Goto the Home Dir of sbharathi.
+
+$ cd myprj -- Change the current Dir to myprj.
+
+$ cd .. -- Goto the parent Dir.
+
+$ cd -  -- Goto the last visited Dir.
+
+TIP: 
+
+CDPATH - Easy access to frequently used Dirs. For example, I use
+/usr/a/dir1, /usr/b/dir2/ and /usr/c/dir3 very frequently. So I added
+the above dirs CDPATH like this
+
+CDPATH=/usr/a/dir1/:/usr/b/dir2/:/usr/c/dir3/
+
+Now there no need for me to type exact path to cd. Just cd dir1 will
+cd to /usr/a/dir1. Actually cd will looks into CDPATH before doing the
+action.
+
+Note:
+1) Before changing to new path, cd will save the old path in the 
+   $OLDPWD evn variable.
+2) After changing to new path, cd will save the new path in the $PWD 
+   env variable.
+
+Read : help cd

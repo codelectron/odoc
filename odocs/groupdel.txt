@@ -1,0 +1,21 @@
+One Day One Command :-
+====================
+
+groupdel -- Delete a group
+
+Summary : 
+
+The groupdel command modifies the system account files, deleting all
+entries that refer to group.
+
+Example:
+
+# groupdel mygrp -- Remove all entries about the mygrp.
+
+Note:
+
+1) The named group must exist.
+2) You may not remove the primary group of any existing user. You
+   must remove the user before you remove the group.
+
+Read: man groupdel

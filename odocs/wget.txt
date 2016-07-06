@@ -1,0 +1,28 @@
+One Day One Command 
+===================
+
+wget -- Non-Interactive tool to download files from Web.  
+
+Summary:
+
+GNU Wget is a free utility for non-interactive download of files from
+the Web.  It supports HTTP, HTTPS, and FTP protocols, as well as
+retrieval through HTTP proxies.
+
+Examples:
+
+$ wget http://server/ -- Download the Main page.
+
+$ wget -t=5 http://server/file.html -- Retry 5 times before fails.
+
+$ wget -c ftp://server.in/file.tgz -- Continue getting a partially
+                                      downloaded file.
+
+$ wget -r -l2 -P/tmp http://server.com/ -- Download 1st 2level of 
+                          files from the server and save in /tmp.
+
+$ wget -i dwnloadit.txt -- Read the URLs from the file and download.
+
+$ wget -p http://server/file.html -- Download all other necessary files.
+
+Read: man wget and info wget (Lot of examples available)

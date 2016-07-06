@@ -1,0 +1,37 @@
+One Day One Command 
+===================
+
+install -- Copy files and set attributes.
+
+Summary:
+
+'install' will copy single/multiple source(s) to destination, sets
+permission modes & owner/group and take backup of existing files. It
+is very useful for writing the install scripts.
+
+Examples:
+
+$ install myfile Dir1 -- Copy myfile to Dir1 with same name.
+
+$ install myfile test -- Copy myfile to test.
+
+$ install -b myfile test -- Copy myfile to test. If test is already 
+                            exists, then take a backup (test~).
+
+$ install -b -S.bak myfile test -- Same as above. But backup file will 
+                                  created with .bak suffix (test.bak).
+
+$ install --backup=t myfile test -- Take numbered backups (test.~1~).
+
+$ install -p myfile test -- Preserve the access and modification time, 
+                            while copying the file.
+
+$ install -m 444 myfile test -- Copy myfile with specified permission 
+                                mode. Default is 755.
+
+$ install -g newgrp myfile test -- Copy myfile and set GID is newgrp.
+
+$ install -s mybin test.bin -- Strip the symbol tables from installed 
+                               binary executables.
+
+Read: man install

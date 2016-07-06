@@ -1,0 +1,35 @@
+One Day One Command 
+===================
+
+nohup -- Run a command even after HangUP(logout).
+
+Summary:
+
+`nohup' runs the given COMMAND with hangup signals ignored, so  that
+the command can continue running in the background after you log out.
+`nohup' does not run the command in the background. We have do it by
+ending command line with an `&'.
+
+Examples:
+
+Create a test script :
+
+$ cat > myscript
+  sleep 60
+  echo Bharathi
+  date
+
+Press Ctrl+D to save and exit.
+
+$ chmod 555 myscript -- Add execute permission.
+
+$ nohup myscript & -- Run the script in background.
+
+$ logout -- Logout the session.
+
+Again login after 2 mins.
+
+$ cat nohup.out -- All output of the program will redirected to 
+                   this file.
+
+Read: man nohup

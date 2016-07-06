@@ -1,0 +1,33 @@
+One Day One Command :-
+====================
+
+dmesg - Print or Control the kernel ring buffer
+
+Summary : 
+
+dmesg is used to examine or control the kernel ring buffer.  The
+program helps users to print out their boot-up messages.
+
+Example:
+
+$ dmesg -- Print the kernel boot-up messages.
+
+$ dmesg > boot.mesg -- Redirect the out to file.
+
+# dmesg -c -- Clear the ring buffer after printing.
+
+# dmesg -s4096 -- Set the kernel ring buffer size.
+
+# dmesg -n1 -- Set the level at which logging of messages is done to
+               the console.
+
+               1 -- Action must be taken immediately
+               2 -- Critical conditions
+               3 -- Error conditions
+               4 -- Warning conditions
+               5 -- Normal but significant condition
+               6 -- Informational
+               7 -- Debug-level messages
+               8 -- All
+
+Read: man dmesg

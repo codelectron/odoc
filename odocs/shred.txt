@@ -1,0 +1,26 @@
+One Day One Command
+===================
+
+shred -- Overwrite/Delete a file securely.
+
+Summary:
+
+Overwrite the specified file repeatedly and remove, in order to make
+it harder for even very expensive hardware probing to recover the
+data.
+
+Example:
+
+$ shred file -- Repeatedly overwrite the file content with random data.
+
+$ shred -v file -- Show progress info.
+
+$ shred -n 5 file -- Overwrite 5 times instead of the default is 25.
+
+$ shred -x file -- Use exact size. Don't round of.
+
+$ shred -z file -- At the end of shred, overwrite the file with zeros.
+
+$ shred -u file -- Overwrite, Truncate and Remove the file.
+
+Read: man shred

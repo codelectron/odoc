@@ -1,0 +1,42 @@
+One Day One Command 
+===================
+
+<, >, >>, | --  Redirection Operators.
+
+Summary:
+
+By using some special notation, we can redirect the output of many
+commands to files, devices, even to the input of other commands and
+pass the output of one command as input to another command. There are
+3 Type redirections are available in shell:
+ 
+1) Standard Output, 2) Standard Input and 3) Pipe
+
+Examples:
+
+$ ls > MyFile -- Redirecting the std output of 'ls' to a file.
+
+$ ls >> MyFile -- Append the redirected 'ls' output to a file.
+
+$ ls NoDir 2> MyFile -- Redirect the std errors to a file. (TRY: Just
+                        remove the 2 and check the output).
+
+$ touch a b -- Create 2 dummy file for testing.
+
+$ ls a b c d > MyFile 2>&1 -- Redirect both std output and std error 
+                              to a file.
+
+$ sort < NameList -- Redirect the file 'NameList' as the input to the 
+                     sort command.
+
+$ sort < NameList > file -- Same as above. But here output is also
+                            redirected to file.
+
+$ ls -1 | sort | less -- Output of 'ls' is piped to 'sort' as an input
+                    & output of 'sort' is piped to 'less' as an input.
+
+Filter Programs performs operations on input and writes the result to
+the standard output. Filters are very useful in redirection. Examples:
+sort, tee, grep, less, head.
+
+Read: info bash

@@ -1,0 +1,20 @@
+One Day One Command 
+===================
+
+lsdev - Display information about installed hardware
+
+Summary:
+
+lsdev gathers information about your computer's installed hardware
+from the interrupts, ioports and dma files in the /proc directory,
+thus giving you a quick overview of which hardware uses what I/O
+addresses and what IRQ and DMA channels.
+
+This program only shows the kernel's idea of what hardware is present,
+not what's actually physically available.
+
+Examples:
+
+$ lsdev
+
+Read: man lsdev

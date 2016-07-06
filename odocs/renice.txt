@@ -1,0 +1,36 @@
+One Day One Command 
+===================
+
+renice -- Alter priority of running processes.
+
+Summary:
+
+GNU/Linux is a multi-user and multi-tasking OS. So many processes will
+be running with some scheduling policy like Round Rabin, FIFO etc..
+High priority process will get more CPU Time.
+
+Renice is used to alters the scheduling priority of one or more
+running processes. Priority range goes from -20 (highest priority)  
+to 19 (lowest priority).
+
+Examples:
+
+$ renice +1 123 -- Increment the priority value of a process, which 
+                   process ID is 123.
+
+# renice +1 123 -- Decrement the priority value of a process, which 
+                   process ID is 123. (Root only can decrement ).
+
+$ renice +1 -p 123 -p 200 -- Same as above. Here no. of process is 2.
+
+$ renice +1 -u sbharathi -- Increment the priority value of all 
+                     processes, which is owned by a user (sbharathi).
+
+$ renice +1 -g backup -- Increment the priority value of all
+               processes, which is owned by a group (backup).
+
+
+NOTE: Incrementing the priority value will reduce the priority level 
+      and vice versa. Priority range is -20 (high) to 19 (low).
+
+Read: man renice

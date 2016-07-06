@@ -1,0 +1,21 @@
+One Day One Command :-
+====================
+
+wall -- Send a message to everybody's terminal.
+
+Summary :
+
+Wall sends a message to everybody logged. The length of the message is
+limited to 20 lines. You MAY need root permission, on some system, to 
+run this command. This command is used to pass the some critical 
+information to all.
+
+Examples :
+
+# wall "Welcome" -- Send the string "Welcome" to all.
+
+# wall < mesg.txt -- Send the file content to all.
+
+# wall -- Enter the message in stdin and terminate with Ctrl+D.
+
+Read : man wall

@@ -1,0 +1,25 @@
+One Day One Command
+===================
+
+stty - Prints/Changes the terminal characteristics.
+
+Summary:
+
+`stty' prints or changes terminal characteristics, such as baud rate,
+I/O settings, control settings, etc..
+
+Example:
+
+$ stty -- Show Baud rate, line discipline number.
+
+$ stty -a -- Print all current settings in human-readable format.
+
+$ stty -g -- Print all current settings in stty-readable format.
+
+$ stty -echo -- Disable character echo on screen.
+
+$ stty echo -- Enable character echo on screen.
+
+$ stty intr ^I -- Change interrupt sequence for Ctrl+C to Ctrl+I.
+
+Read: man stty (or) info stty

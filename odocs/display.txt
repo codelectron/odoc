@@ -1,0 +1,33 @@
+One Day One Command (By Mr Arpit Sud)
+======================================
+
+display -- Display an Image on any workstation running X.
+
+Summary:
+
+Display is a machine architecture independent image processing and
+display program. It can display an image on any workstation screen
+running an X server. Display can read and write many of the more
+popular image formats (e.g. JPEG, TIFF, PNM, Photo CD, etc.). It has 
+many option to perform operation like invert, resize, rotate, etc..
+
+Examples:
+
+$ display image.jpg -- Display the image.jpg.
+
+$ display -size 800x640 image.png -- Display the image.png in 800x640 
+                                     pixels.
+
+$ display -colors 16 image.gif -- Display the image.gif as a 16bit 
+                                 colors image.
+
+$ display -border 10x10 -bordercolor red  image.png -- Display the 
+                   image with red color border of size 10x10 pixels.
+
+$ display http://www.chennailug.org/pictures/titlealt.jpg -- Display 
+                                              the image from the URL.
+
+$ display -monochrome colors.png -- Display the color image in 
+                                    monochrome format.
+
+Read: man display

@@ -1,0 +1,50 @@
+One Day One Command :-
+====================
+
+tree - List contents of dirs in a TREE-like format.
+
+Summary : 
+
+Tree is a recursive directory listing program that produces a listing
+of files in different formats according to the options.
+
+Examples :
+
+$ tree -- Recursive listing of Dirs and files.
+
+$ tree dir1 dir2 -- list the files from Dir1 and Dir2.
+
+$ tree -a -- List all files including the hidden files.
+
+$ tree -d -- List only Dir entries.
+
+$ tree -f -- List file with full path prefix.
+
+$ tree -i -- List the file in the ls style.
+
+$ tree -P '*txt' -- List the files with txt extension.
+
+$ tree -I '*txt' -- List the file with-out txt extension.
+
+$ tree -p -- List files with permission info.
+
+$ tree -s -- List files with Size info.
+
+$ tree -u -- List files with User Name/ID.
+
+$ tree -g -- List files with Group Name/ID.
+
+$ tree -D -- List files with Last modified date.
+
+$ tree -F -- Add Symbols (as per ls -F) to the files.
+
+$ tree -t -- Sort the output by Last modified time.
+
+$ tree -C -- Turn On colorization.
+
+$ tree -n -- Turn Off colorization.
+
+NOTE: By default, It will not be installed in RedHat Distro.
+
+Read : man tree
+

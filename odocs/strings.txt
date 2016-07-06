@@ -1,0 +1,31 @@
+One Day One Command
+===================
+
+strings - Print the strings of printable characters in files.
+
+Summary:
+
+For each file given, strings prints the printable character sequences
+that are at least 4 characters long & are followed by an unprintable
+character. Strings is mainly useful for determining the contents of
+non-text files.
+
+Example:
+
+$ strings /bin/ls -- Prints the strings from initialized & loaded
+                     sections.
+
+$ strings -a file -- Scan the whole file for the strings.
+
+$ strings -f /bin/* | grep Free -- Print Filename before each string.
+
+$ strings -t o file -- Print the offset within the file before each  
+                      string [o = octal, x = hex, d = decimal].
+
+$ strings -n 10 file -- Print sequences of characters that are at
+                        least 10 characters long (Default 4).
+
+NOTE:  Write one "Hello World" Program in C and try this command on
+the binary file(a.out) of that program.
+
+Read: man strings

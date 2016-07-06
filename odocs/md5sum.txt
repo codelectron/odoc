@@ -1,0 +1,31 @@
+One Day One Command
+===================
+
+md5sum -- Compute and Check MD5 Check sums.
+
+Summary:
+
+`md5sum' computes a 128-bit checksum/fingerprint/message-digest for
+each specified file.  `md5sum' can also determine whether a file &
+checksum are consistent.
+
+Example:
+
+$ md5sum file -- Compute and print the MD5 checksum of that file.
+
+$ md5sum -c input.txt -- Read checksum and filename from the file and 
+validate checksums.
+
+$ md5sum -w -c input.txt -- Same as above and warn if the checksums 
+                            format is wrong in the file.
+
+$ md5sum --status -c input.txt -- Indicate the status in exit status 
+                                  code.
+
+Read: man md5sum
+
+input.txt Format:-
+
+787e64182f251c0b877f734cbe77d987  file1
+be7b28e15963d38e05591118cfe049d2  file2
+9b088ddc22456233a76  file3

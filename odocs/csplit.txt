@@ -1,0 +1,28 @@
+One Day One Command :-
+====================
+
+csplit - Split a file into sections determined by Context
+
+Summary : 
+
+Output pieces of FILE separated by PATTERN(s) to files `xx01', `xx02'
+,..., & output byte counts of each piece to standard output.  
+PATTERN(s) are Line Numbers or a Regexp.
+
+Examples :
+
+$ csplit myfile 10 40 80 -- 1st file contains 1-9 lines, 2nd 10-39 ,
+                            3rd 40-79 and 4th 80-EOF.
+
+$ csplit myfile 10 10 80 -- Zero length file will be create for the 
+                            2nd parameter..
+
+$ csplit -z myfile 10 10 60 -- Same as above. But Zero length file 
+                               will NOT created
+
+$ csplit myfile /Midas/ -- Copy upto, but not the matching line and 
+                           remaining in 2nd file.
+
+$ csplit myfile %Midas% -- skip upto, but not the matching line
+
+Read : man csplit

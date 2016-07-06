@@ -1,0 +1,31 @@
+One Day One Command 
+===================
+
+fg -- Place a job in the ForeGround.
+
+Summary:
+
+Normally user can run many jobs in background, by adding & at end of
+the command (ex: sleep 10 &).
+
+fg is a shell command. It is used to move a job from background to the
+foreground, as if it is NOT started with `&'. If JOB is not present,
+then current job is used.
+
+Examples:
+
+$ sleep 100 & -- Start a dummy job in background.
+
+$ fg -- Move the last job to foreground.
+
+$ sleep 150 & -- Dummy job 1
+
+$ sleep 140 & -- Dummy job 2
+
+$ sleep 130 & -- Dummy job 3
+
+$ jobs -- List all active jobs.
+
+$ fg 2 -- Move the 2nd active job to foreground.
+
+Read: help fg, jobs

@@ -1,0 +1,34 @@
+One Day One Command :-
+====================
+
+fmt -- Simple optimal text ForMatTer
+
+Summary :
+
+`fmt' reads from the specified file arguments or stdin, and writes 
+to stdout. 
+
+Examples :
+
+$ fmt myfile -- Format myfile and max line length is 75.
+
+$ fmt f1 f2  -- Format f1 f2  and max line length is 75.
+
+$ fmt -w 60 f1 f2 -- Same as above but max line length is 60.
+
+$ fmt -s myfile -- Don't split the small line. Useful if your file 
+                   contains some sample program codes.
+
+$ fmt -u myfile -- Uniform spacing. One space between words. Two space 
+                   between sentences.
+
+$ fmt -p BB myfile -- Only lines beginning with BB will be formatted.
+
+$ fmt -t myfile -- Paragraph indentation will be preserved.
+
+Note: By default, blank lines, spaces between words, and indentation
+are preserved in the output; successive input lines with different
+indentation are not joined; tabs are expanded on input and introduced
+on output.
+
+Read : man fmt

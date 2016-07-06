@@ -1,0 +1,21 @@
+One Day One Command :-
+---------------------
+
+info - Read documentation in Info format.
+
+Summary: 
+
+Apart from Man pages, some commands comes with a detail manual pages,
+called info pages, which is in info format. This info command provides
+Menu, Search, Corss-Ref and many other facilities.
+
+Examples:
+
+$ info  -- List all info pages available in the system.
+
+$ pinfo -- Curses based lynx-style info browser.
+
+$ info  emacs -- Show Emacs info page. (See man emacs, to feel the 
+                 difference)
+
+Read: info info, info pinfo

@@ -1,0 +1,24 @@
+One Day One Command 
+===================
+
+deallocvt -- Deallocate Unused Virtual Consoles.
+
+Summary:
+
+The command deallocvt deallocates kernel memory and data structures 
+for all *UNUSED* virtual consoles.
+
+When you do 'openvt', a new virtual console will be created on the
+next free terminal. After using that, We can deallocate it using the
+'deallocvt' command.
+
+Examples:
+
+# openvt -s ls -- Run the 'ls' on next free VT (mostly on 7).
+
+# deallocvt -- Deallocate unused VT. Now switch to 7(?), you won't 
+               see any change on the screen.
+
+# deallocvt 7 -- Deallocate /dev/tty7, if it is unused.
+
+Read: man deallocvt

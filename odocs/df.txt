@@ -1,0 +1,31 @@
+One Day One Command :-
+--------------------
+df -- Disk Free and Usage report
+
+Summary:-
+
+df command display the amount of disk space available on 
+the filesystem (FS) containing each file name argument. 
+If no file name is given, the space available on all 
+currently mounted FSs is shown.
+
+Examples :-
+
+$ df -- Usage report of all mounted FS.
+
+$ df myfile -- Display usage report of FS which contain
+               the myfile.
+
+$ df /home -- Usage report of Home partition
+
+$ df /dev/hda1 -- Usage report of /dev/hda1
+
+$ df -Th -- Display the partition type and size is in human 
+            readable format
+
+$ df -x tmpfs -- Don't list the 'tmpfs' partitions.
+
+$ df -P -- Output in POSIX format. (Remove -P and see the 
+           difference)
+
+Read: man df

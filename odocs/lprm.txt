@@ -1,0 +1,21 @@
+One Day One Command
+===================
+
+lprm --  Cancel print jobs
+
+Summary:
+
+lprm cancels print jobs that have been queued for printing. If no
+arguments are supplied, the current job on the default printer is
+canceled. You can specify one or more job ID numbers to cancel those
+jobs, or use the - option to cancel all jobs.
+
+Example:
+
+$ lprm -- Cancel the current job on default printer.
+
+$ lprm -P prn2 -- Cancel the current job on printer PRN2.
+
+$ lprm 100 200 -- Cancel jobs with id 100 and 200.
+
+Read: man lprm

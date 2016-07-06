@@ -1,0 +1,29 @@
+One Day One Command :-
+-------------------
+
+nl - Number lines of files
+
+Summary : 
+
+Write each FILE to stdout, with line numbers added.
+With No FILE or -, read stdin
+
+Examples :
+
+nl myfile -- Writes all non-empty lines with number.
+
+nl -ba myfile -- Number all lines.
+
+nl -ba -l2 myfile -- Count 2 empty line as 1 and display
+
+nl -nln myfile -- Numbers are left justified.
+
+nl -nrz myfile -- Numbers are right justified and leading zeros
+
+nl -w2 myfile -- Uses 2 column for the line number.
+
+nl -s"> " myfile -- Insert "> " in between number and line.
+
+ls | nl -- ls Output with line numbers
+
+Read : man nl

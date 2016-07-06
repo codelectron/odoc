@@ -1,0 +1,33 @@
+One Day One Command :-
+====================
+
+cdplay, cdp -- Program to Control & Play Audio CDs.
+
+Summary :
+
+cdplay is a text-mode program for controlling and playing audio CDs.  
+cdp is same as cdplay. But it is an interactive program. It uses the
+NUM keypad as a control panel to allow you to move track to track,
+play, pause, stop, and resume playing of audio CDs.
+
+Example:
+
+$ cdp -- Start in interactive mode with text based user interface.
+
+$ cdplay -- Start playing the Audio CD in the CD Drive.
+
+$ cdplay play 6 -- Play the track number 6.
+
+$ cdplay stop -- Stop it.
+
+$ cdplay -l -- Slow start (Give some time for CD Drive to init).
+
+$ cdplay table -- Show CD Contents.
+
+Note: 
+1) Most of the command line options are same for cdplay and cdp.
+2) If the Audio-Out of the CD Drive is not connected to sound 
+   card then, you have use the head-phone out of the CD Drive to 
+   hear the music.
+
+Read: man cdp/cdplay

@@ -1,0 +1,26 @@
+One Day One Command 
+===================
+
+aspell -- Spell Checker
+
+Summary:
+
+Aspell can either be used as a library or as an independent spell
+checker. Its main feature is suggesting possible replacements for a
+misspelled word. Aspell can also easily check documents in UTF-8
+without having to use a special dictionary.
+
+Examples:
+
+$ aspell -- Show Help/Usage message.
+
+$ aspell conf -- Show ASpell configuration details.
+
+$ aspell -l -- Start typing some words and Press Ctrl+D then aspell 
+               list all misspelled words from that text.
+
+$ aspell -c MyFile -- Run Spell checker over MyFile and Give a list of
+                      replacement work for the misspelled words.
+
+Read: man aspell or /usr/share/doc/aspell-xyz/
+                 or http://aspell.sourceforge.net/

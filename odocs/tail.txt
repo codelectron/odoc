@@ -1,0 +1,37 @@
+One Day One Command :-
+====================
+
+tail - Output the last part of files.
+
+Summary : 
+
+Print  the  last  10  lines of each FILE to stdout.
+With more than one FILE, precede each with a header 
+giving the file name. 
+
+Examples :
+
+$ tail midas.txt -- Show only the last 10 Lines.
+
+$ tail f1 f2 -- Show the last 10 lines of 2 files 
+                with small header.
+
+$ tail -vn 5 myfile -- Show only last 5 Lines with
+                       header.
+
+$ tail -c 12 myfile -- Show only last 12 Bytes.
+
+$ tail -q myfile -- Don't show headers.
+
+$ tail --retry myfile -- Keep retrying to open myfile.
+
+$ tail -f maillog -- Output appended data as the file 
+                     grows. Useful to monitor logs.
+
+$ tail -f -s 10 maillog -- Once in every 10s update the 
+                           output.
+
+$ tail -f --pid=200 myfile -- Terminate tail after PID 
+                              (200) dies.
+
+Read : man tail

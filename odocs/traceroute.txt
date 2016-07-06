@@ -1,0 +1,27 @@
+One Day One Command 
+===================
+
+traceroute - Print the route taken to a network host.
+
+Summary:
+
+Traceroute command is used to print the network path from your
+computer to a remote computer and time taken to reach that remote
+computer. Read the man page to more technical details.
+
+Examples:
+
+$ traceroute google.co.in -- Trace the route for Google Server.
+
+$ traceroute -v 192.168.12.1 -- Show more details.
+
+$ traceroute -n server -- Print the HOP Address in numeric form.
+
+$ traceroute -I server -- Use ICMP ECHO instead of UDP datagrams.
+
+# traceroute -i eth1 server -- Use eth1 for send the probe packets.
+
+$ traceroute server 100 -- Sent 100 Bytes packet instead of default 40
+                           Bytes packet.
+
+Read: man traceroute

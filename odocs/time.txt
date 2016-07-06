@@ -1,0 +1,33 @@
+One Day One Command 
+===================
+
+time -- Measure the program resource usage
+
+Summary:
+
+The `time' command runs another program, then displays information
+about the resources used by that program, collected by the system
+while the program was running.
+
+Info consist of (i) Elapsed real time between invocation and
+termination, (ii) User CPU time and (iii) System CPU time.
+
+Examples:
+
+$ time ls -- Run the ls and show usage info.
+
+$ time -p ls -- Same above. Output in portable format.
+
+# time -o file ls -- Redirect the output to a file.
+
+# time -a -o file ls -- Append the output to a file.
+
+# time -v sleep 6 -- Show more detail info.
+
+# time -f "\t%E real,\t%U user,\t%S sys" sleep 6 -- Show formatted 
+                                                    output.
+
+Note: By using custom output format, we can print (I) Time,
+(II) Memory and (III) I/O Resource informations.
+
+Read: man time

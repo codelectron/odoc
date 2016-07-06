@@ -1,0 +1,30 @@
+One Day One Command :-
+====================
+
+sleep/usleep -- Sleep for a specified amount of time
+
+Summary :
+
+Sleep will introduce a delay for a specified seconds (Seconds may be
+an arbitrary floating point number). usleep sleeps some no of micro-
+seconds (default is 1).
+
+Examples :
+
+$ sleep 6  -- Sleep for 6 Seconds.
+
+$ sleep 6s -- Sleep for 6 Seconds (Default).
+
+$ sleep 6m -- Sleep for 6 Minutes.
+
+$ sleep 6h -- Sleep for 6 Hours.
+
+$ sleep 6d -- Sleep for 6 Days.
+
+$ sleep 10.5 -- sleep for 10.5 Seconds.
+
+$ usleep 200 -- Sleep for 200 mSec.
+
+Sleep may NOT give a very accurate result on many machines.
+
+Read : man sleep, usleep

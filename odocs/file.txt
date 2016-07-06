@@ -1,0 +1,49 @@
+One Day One Command :-
+====================
+
+file -- Try to determine the FILE type.
+
+Summary : 
+
+File tests each argument in an attempt to classify it. There are 3
+sets of tests, performed in this order: File System Test, Magic 
+Number Test, and Language Test.
+
+The File System test is based on examining the return from a stat(2)  
+system call.  The program checks to see if the file is empty, or if
+it's some sort of special file (block, char, pipe, ...).
+
+The Magic Number test is used to check for files with data in
+particular fixed formats. For example, a binary executable files will
+have magic number in some fixed position to indicate the OS, that file
+is executable. Few standard data files also following the magic number
+concept.
+
+The Language Test will happen, if a file does not match any of the
+entries in the magic file. File will be checked for the ASCII, UTF8
+ISO-8859-x, ... Char set. Once file has determined the character set
+used in a text-type file, it will attempt to determine in what (prg)
+language the file is written.
+
+Unidentified file will classified as ``data''.
+
+Example:
+
+$ file myfile -- Print the file type.
+
+$ file -b myfile -- Don't the filename in the output.
+
+$ file -f list -- Take the input filenames (one per line) from the 
+                  file 'list'.
+
+$ file -k myfile -- Print all matches. 
+
+$ file -z myfile.tgz -- Try to look into compressed file.
+
+$ file -i myfile -- Print the output in MIME format.
+
+$ file -m mymagic myfile -- Use custom magic file.
+
+# file -s /dev/hda? -- Take blk/char special files as an argument.
+
+Read: man file

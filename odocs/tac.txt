@@ -1,0 +1,22 @@
+One Day One Command
+===================
+
+tac -- Concatenate and Print files in reverse order.
+
+Summary:
+
+`tac' copies each file to standard output, reversing the records
+(lines by default) in each separately. It is doing the reverse
+function of the CAT command (TAC).
+
+Example:
+
+$ tac myfile -- Print the file (Line by Line) in reverse order.
+
+$ tac -r -s '[^a-zA-z0-9\-]' myfile -- Print the file (Word by Word)  
+                 in reverse order, by passing the Regular expression.
+
+$ tac -r -s '.\|' myfile -- Print the file (Char by Char) in reverse 
+                            order.
+
+Read: man tac

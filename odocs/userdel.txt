@@ -1,0 +1,21 @@
+One Day One Command :-
+====================
+
+userdel - Delete a user account and related files
+
+Summary :
+
+The userdel command modifies the system account files, deleting all
+entries that refer to login. userdel will not allow you to remove an
+account if the user is currently logged in. You must kill any running
+processes which belong to an account that you are deleting.
+
+Example:
+
+# userdel usr1 -- Remove the usr1 account entry details. Home Dir will 
+                  not be removed.
+
+# userdel -r usr1 -- Remove the account entries, Home Dir and Mail
+                     Spool of the usr1.
+
+Read: man userdel

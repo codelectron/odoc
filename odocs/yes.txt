@@ -1,0 +1,27 @@
+One Day One Command :-
+====================
+
+yes -- Print a string until interrupted
+
+Summary :
+
+It prints the command line arguments, separated by spaces & followed
+by a newline, forever until it is killed. 'yes' can be used to feeds a
+continuous string of the character to another process and create dummy
+process for learning the process control.
+
+Example:
+
+$ yes -- Prints `y' followed by a newline until killed.
+
+$ yes Midas -- Prints `Midas' followed by a newline until killed.
+
+$ yes `cat myfile` -- Print myfile content until killed.
+
+$ yes | fsck /dev/hda1 -- Runs fsck non-interactively.
+
+$ yes | rm -r mydir -- Same effect as rm -rf mydir.
+
+$ yes > /dev/null & -- Dummy process.
+
+Read : man yes

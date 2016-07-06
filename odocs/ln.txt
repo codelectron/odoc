@@ -1,0 +1,46 @@
+One Day One Command :-
+====================
+
+ln -- Make LiNks between files.
+
+Summary : 
+
+Create a link to the specified TARGET with optional LINK_NAME. If
+LINK_NAME is omitted, a link with the same basename as the TARGET 
+is created in the current directory. By default, it makes HardLinks.
+
+A "hard link" is another name for an existing file. The link and the
+original are indistinguishable.  They share the same inode.
+
+A Soft links/Symbolic links/symlinks are a special file type. The link
+file actually refers to a different file, by name. At runtime kernel
+automatically "dereferences" the link and operates on the target of
+the link.
+
+Example:
+
+$ ln --help -- Show help info.
+
+$ ln A B -- Creates hard link B for file A.  
+
+$ ln -b A B -- Same as above. If B is already exist then Take a backup 
+               (B~) and creates new B.
+
+$ ln -b -S .bak A B -- Same as above. If B is already exist then Take 
+        a backup with specified extention name(B.bak) & creates new B.
+
+$ ln -f A B -- Force. If B is exist then overwrite it.
+
+$ ln -i A B -- Interactive. Prompt the user for removing the already 
+               existing file B.
+
+$ ln -s A B -- Creates soft link B for file A.
+
+$ ln -s dir1/myfile -- Creates link ./myfile pointing to dir1/myfile.
+
+$ ln -s dir1/myfile myfile -- Creates link ./myname pointing to 
+                               dir1/myfile.
+
+$ ln -s a b .. -- Creates links ../a and ../b pointing to ./a & ./b
+
+Read: man ln

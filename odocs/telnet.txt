@@ -1,0 +1,26 @@
+One Day One Command 
+===================
+
+telnet -- User interface to the TELNET Protocol.
+
+Summary:
+
+The telnet command is used to communicate with another host using the
+TELNET protocol. The telnet daemon (telnetd) must be running in the
+another host to successfully connect to it.
+
+Examples:
+
+$ telnet localhost -- Telnet to the same computer.
+
+$ telnet 127.0.0.1 -- Telnet to the same computer.
+
+$ telnet MyServer 23 -- Telnet to MyServer thru Port #23.
+
+$ telnet -l user1 MyServer -- Telnet to MyServer with UserName as 
+                              user1.
+
+$ telnet -a MyServer -- Automatic Login. Telnet to MyServer with 
+                        current login name.
+
+Read: man telnet and man telnetd

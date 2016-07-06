@@ -1,0 +1,44 @@
+One Day One Command :-
+====================
+
+ps - Report Process Status
+
+Summary :
+
+ps gives a snapshot of the current processes. Lot of info, like CPU
+and MEM Usage, PID, UID, Status,..., about the present status of the
+process will be available in the ps output. ps can also be used as a
+debugging tool.
+
+Example:
+
+$ ps -- Show all running in the current terminal.
+
+$ ps -h -- Same as above. But with-out header.
+
+$ ps -ux -- Show all processes owned by you.
+
+$ ps -U sbharathi -- Show all processes owned by sbharathi.
+
+$ pc -C bash -- Show all process with name bash.
+
+$ ps -C syslogd -o pid=  -- Print PID of syslogd.
+
+$ ps -aux -- Show all processes including daemons (without tty)  with
+             username or UID.
+
+$ ps -jx --sort=uid,-pid -- All processes will list in ascending order 
+            of UID and each users process will sorted descending order.
+
+$ ps -o start,time,etime -p 100 -- Show the current status of the
+                                   process with PID 100.
+
+$ ps -e -o pid,state,cmd -- Show all processes PID, State & Command
+                            (Custom output format -o ).
+
+$ ps -ho "Process %a with PID %p is owned by %U" -- Custom output.
+
+$ ps -x -o pid,ruser=RealUser -o comm=Command -o stat=Status -- Output
+with custom headers.
+
+Read : man ps

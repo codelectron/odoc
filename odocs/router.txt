@@ -1,0 +1,38 @@
+One Day One Command 
+===================
+
+route -- Show / Manipulate the IP routing table.
+
+Summary:
+
+Route manipulates the kernel's IP routing tables. Its primary use is
+to set up static routes to specific hosts or networks via a network
+interface (like eth0 ...).
+
+Example:
+
+$ route -- Show routing table. It will try resolve the name for IP.
+
+$ route -n -- Same as above. But won't resolve.
+
+$ route -ee -- Show more detailed info.
+
+$ route -A inet6 -- Show IPv6 related route info.
+
+# route add -net 127.0.0.0 -- Adds the normal loopback entry.
+
+# route add -net 192.168.14.0 netmask 255.255.255.0 dev eth0 -- Adds 
+                     a route to the network 192.168.14.x via "eth0".
+
+# route add default gw midas-gw dev eth1 -- Set the default Gateway 
+                                            for eth1.
+
+# route del default dev eth0 -- Remove the default Gateway of eth0.
+
+# route add -net 10.0.0.0 netmask 255.0.0.0 reject -- Sets rejecting  
+                                       route  for  the "10.x.x.x."
+
+# route add -net 192.168.13.0 netmask 255.255.255.0 gw wify1 -- Adds 
+               the net "192.168.13.x" to be gatewayed through wify1.
+
+Read: man route

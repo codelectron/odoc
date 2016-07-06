@@ -1,0 +1,40 @@
+One Day One Command
+===================
+
+bzip2 -- A Block-sorting file (de)compressor.
+
+Summary:
+
+bzip2 compresses files using the Burrows-Wheeler block sorting text
+compression algorithm, and Huffman coding.  Compression is generally
+considerably better than the conventional compressors, and approaches
+the performance of the PPM family of statistical compressors.
+
+
+Example:
+
+$ bzip2 myfile -- Compress & Save it in myfile.bz2. Delete the input 
+                  file.
+
+$ bzip2 -k myfile -- Same as above. But Don't delete the input file.
+
+$ bzip2 -d myfile.bz2 -- Decompress & Save it in myfile. Delete the 
+                         input file.
+
+$ bzip2 -kd myfile.bz2 -- Same as above. But don't delete the input 
+                          file.
+
+$ bzip2 -fd myfile.bz2 -- Force overwrite of output files (by default 
+                          not overwrite existing files).
+
+$ bzip2 -t myfile.bz2 -- Check the integrity of the compressed file.
+
+$ bzip2 -v myfile -- Show the detail status info about the operation.
+
+$ bzip2 -q myfile -- Suppress non-essential warning messages.
+
+$ tar -cjvf myfile.tar.bz2 mydir -- BZip2 thru TAR command.
+
+$ tar -xjvf myfile.tar.bz2 -- BUnZip2 thru TAR command.
+
+Read: man bzip2

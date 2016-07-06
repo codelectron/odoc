@@ -1,0 +1,48 @@
+One Day One Command 
+===================
+
+ldd -- Print shared Library DepenDencies.
+
+Summary:
+
+Most of the programs/libraries are linked to shared libraries, like
+libc, etc. If a particular shared library, needed by a xyz program, is
+not present in the system, then xyz program will not run.
+
+ldd command is used to print the shared libraries required by each
+program or shared library specified on the command line.
+
+Examples:
+
+$ ldd /bin/ls -- Print all shared libs needed for the ls command.
+
+$ ldd -v /bin/ls -- Same as above + Extra details.
+
+$ ldd /lib/libtermcap.so.2 -- Print all shared libs needed for this
+                              library.
+
+Read: man ldd
+One Day One Command 
+===================
+
+ldd -- Print shared Library DepenDencies.
+
+Summary:
+
+Most of the programs/libraries are linked to shared libraries, like
+libc, etc. If a particular shared library, needed by a xyz program, is
+not present in the system, then xyz program will not run.
+
+ldd command is used to print the shared libraries required by each
+program or shared library specified on the command line.
+
+Examples:
+
+$ ldd /bin/ls -- Print all shared libs needed for the ls command.
+
+$ ldd -v /bin/ls -- Same as above + Extra details.
+
+$ ldd /lib/libtermcap.so.2 -- Print all shared libs needed for this
+                              library.
+
+Read: man ldd

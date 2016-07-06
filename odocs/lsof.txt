@@ -1,0 +1,31 @@
+One Day One Command 
+===================
+
+lsof -- LiSt Open Files.
+
+Summary:
+
+lsof lists all open files belonging to all active processes. An open
+file may be a regular file, a Dir, a special file, an executing text
+reference, a library, a stream or a network file (Internet socket, NFS
+file or UNIX domain socket).
+
+Examples:
+
+$ lsof -- List all open files.
+
+$ lsof -i -- List all open Internet files.
+
+$ lsof -U -- List all open Unix Domain files.
+
+$ lsof -u user1 -- List all files opened by User1.
+
+$ lsof -p 1234 -- List all files opened by process with PID of 1234.
+
+$ lsof /dev/hda2 -- List all open files on device /dev/hda2.
+
+$ lsof -s -- List all open files with size.
+
+$ lsof -r 5 -- Repeat the command for every 5 Sec.
+
+Read: man lsof (More examples are available)

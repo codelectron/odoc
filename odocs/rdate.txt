@@ -1,0 +1,30 @@
+One Day One Command :-
+====================
+
+rdate -- Get the time from Remote machine. 
+
+Summary :
+
+It connects to an Remote Time Server over a TCP/IP network, printing
+the returned time and/or setting the system clock. The time in remote
+server is maintained properly. So that all machines can get the time
+from that server.
+
+Example:
+
+$ rdate -p 192.168.1.5 -- Print the time returned by the remote 
+                          machine.
+
+$ rdate -s remote.pc.com -- Set the system time to the time returned 
+                        by the remote machine (Need Root permission).
+
+$ rdate -u myserver -- Use UDP instead of TCP as the transport.
+
+$ rdate -l myserver -- Use syslog to log errors and output (Useful 
+                       when it is used in cron jobs).
+
+NOTE:
+1) Remote server should run the time service in port 37.
+2) Firewall should not block port 37.
+
+Read : man rdate

@@ -1,0 +1,19 @@
+One Day One Command :-
+====================
+
+groupadd -- Create a new group
+
+Summary : 
+
+The groupadd command creates a new group account using the values
+specified on the command line and the default values from the system.
+
+Example:
+
+# groupadd newgrp -- Create a new group
+
+# groupadd -g 600 newgrp -- Create newgrp with specified Group ID.
+
+# groupadd -f newgrp -- Force flag. Don't show error message.
+
+Read: man groupadd

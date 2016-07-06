@@ -1,0 +1,28 @@
+One Day One Command
+===================
+
+procinfo -- Display system status gathered from /proc folder
+
+Summary:
+
+procinfo gathers system data from the /proc directory and prints
+it nicely formatted on the standard output device.
+
+Example:
+
+$ procinfo -- Show MEM,CPU Usage and IRQ details.
+
+$ procinfo -f -- Run in Full screen mode and update will happen for 
+                 every 5 Sec.
+
+$ procinfo -n.1 -- Run in Full screen mode and update for every .1 
+                   sec (Run with highest-priority).
+
+$ procinfo -m -- Show info about modules and device drivers.
+
+$ procinfo -d -- For memory, CPU times, paging, swapping, disk,
+                 context and IRQ status.
+
+$ procinfo -F /dev/tty9 -- Redirect output to tty9.
+
+Read: man procinfo

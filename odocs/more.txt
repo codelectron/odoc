@@ -1,0 +1,52 @@
+One Day One Command :-
+====================
+
+more -- File perusal filter for crt viewing
+
+Summary : 
+
+Perusal means the act of reading, especially of reading through or
+with care. More is a filter for paging through text one screenful at a
+time.
+
+Examples :
+
+$ more myfile1 myfile2 -- Show myfile 1 & 2  page by page.
+
+$ more -10 myfile -- Show 10lines/page.
+
+$ more -d myfile -- Usually more show % of viewed content only at the 
+                    bottom. With -d it shows more verbose prompt.
+
+$ more -p -10 myfile -- Don't scroll the output. Just the screen and 
+                        display the text.
+
+$ more -c -10 myfile -- Don't scroll.  Instead, paint each screen from
+      the top, clearing the remainder of each line as it is displayed.
+
+
+$ more -s myfile -- Squeeze multiple blank lines into one.
+
+$ more +/Midas myfile -- The +/ option specifies a string that will be 
+                         searched for before each file is displayed.
+
+$ more +10 myfile -- Start at line number 10.
+
+Apart from this option, more will support few interactive commands
+also. For example
+
+:f -- Show current filename
+
+:n -- Next file
+
+:p -- Previous file
+
+b -- Move backward
+
+f -- Move forward
+
+Space -- Next page
+
+ENTER -- Next Line
+
+Read : man more

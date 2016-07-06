@@ -1,0 +1,38 @@
+One Day One Command :-
+====================
+
+tput -- Initialize a terminal or query terminfo database
+
+Summary :
+
+The tput utility uses the terminfo database to make the values of
+terminal dependent capabilities and information available to the 
+shell to initialize/reset/query the terminal.
+
+Examples :
+
+$ tput cols -- Print the no of cols for the current terminal.
+
+$ tput cup 10 5 -- Move the CUrsor Position to Row 20 & Col 5.
+
+$ tput smso -- Starts highlighting
+
+$ tput civis -- Make the Cursor invisible
+
+$ tput cnorm --  Show Cursor
+
+$ tput blink -- Starts blinking the chars
+
+$ tput bold --  show chars in Light Bold
+
+$ tput rev -- Show chars in Reverse Video
+
+$ tput rmso -- Normal mode (No highlight/bold/blink)
+
+$ tput longname -- Show the long name of the current term.
+
+$ tput reset -- reinitialization of term with reset/init strings.
+
+$ tput bold; echo Bharathi -- Just to test.
+
+Read : man tput

@@ -1,0 +1,30 @@
+
+One Day One Command 
+===================
+
+which -- Shows the location of (shell) commands.
+
+Summary:
+
+which will search for the given command in the PATH and prints the
+full path of the executables that would have been executed when this
+command had been entered at the shell prompt.
+
+Examples:
+
+$ which ls -- Print the 1st matching location and alias.
+
+$ which -a kill -- Print all matchings. 
+
+$ which --skip-alias ls -- Don't print the ls alias.
+
+$ which --skip-dot gcc -- Skip Dirs in PATH that start with a dot.
+
+$ which --skip-tilde test -- Skip Dirs in PATH that start with a tilde
+                  and executables which reside in the HOME directory.
+
+$ which ls rm cp -- Search for multiple commands.
+
+$ which NoCmd -- Just Try..
+
+Read: man which

@@ -1,0 +1,33 @@
+One Day One Command 
+===================
+
+passwd - Update a user's authentication tokens(s).
+
+Summary:
+
+Passwd is used to update a user's authentication tokens, like
+password, lifetime, etc..  Passwd is configured to work through 
+the Linux-PAM API.
+
+Example:
+
+$ passwd -- Ask new passwd for your account.
+
+# passwd user1 -- Ask new passwd for user1's account.
+
+# passwd -l user1 -- Lock user1 account.
+
+# passwd -u user1 -- Unlock user1 account.
+
+# passwd -d user1 -- Remove password for user1.
+
+# passwd -S user1 -- Show short info about user1's password.
+
+# passwd -n 30 user1 -- Set 30days as the min lifetime of the user1's 
+                        password.
+
+Note: 
+All new users should read the following topic in the man page
+A) Protect your password & B) Choose a hard-to-guess password
+
+Read: man passwd, pam

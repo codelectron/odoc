@@ -1,0 +1,24 @@
+One Day One Command :-
+====================
+
+split - Split a file into pieces.
+
+Summary : 
+
+Split is used to split a file into equal no .of lines. The output
+files are created with the default Prefix as 'x' and suffix as 2 
+digit number.
+
+Examples :
+
+$ split -l 10 myfile -- Split myfile into files of 10 lines.
+
+$ split -b 100 myfile -- Split myfile into files of 100bytes.
+
+$ split -C 25 myfile -- Put at most 25bytes of lines per file.
+
+$ split -a 4 myfile -- Use suffixe of length 4 chars.
+
+$ split -l 10 myfile myfile -- Use myfile as the prefix text. 
+
+Read : man split

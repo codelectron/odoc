@@ -1,0 +1,25 @@
+One Day One Command 
+===================
+
+timeout -- Send a signal to a program after a certain timeout.
+
+Summary:
+
+'timeout' executes a program (with arguments args) and sends a signal
+(like KILL, TERM etc) to it after a certain amount of seconds. It is 
+from NetaTalk Project.
+
+Examples:
+
+$ timeout 10 ping localhost -- Run the Ping program and send, by
+                             default, a SIGTERM after 10 seconds.
+
+$ timeout -s KILL 10 ping localhost -- Same as above. But here KILL 
+           Signal will be send to the Ping Program after 10 seconds.
+
+$ timeout -s HUP 10 sh -- Spawn a shell and send a hangup signal after 
+                          10 seconds.
+
+$ timeout -s 1 10 sh -- Same as above. Signal #1 == HANGUP.
+
+Read: man timeout & man 7 signal

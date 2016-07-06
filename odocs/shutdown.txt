@@ -1,0 +1,38 @@
+One Day One Command :-
+====================
+
+Warning: Don't try this cmds in the production machines.
+
+shutdown -- Bring the system down (Need Root privilege)
+
+Summary : 
+
+shutdown brings the system down in a secure way.  All logged-in users
+are notified that the system is going down, and login is blocked. All
+processes are first notified that the system is going down by the
+signal SIGTERM. Runlevel 0 is used to halt the system, runlevel 6 is
+used to reboot the system.
+
+Examples :
+
+# shutdown 12:00 -- Shutdown at 12:00
+
+# shutdown +10 -- Shutdown after 10min
+
+# shutdown now -- Immediate shutdown (now == +0)
+
+# shutdown -t 10 -- Wait 10 Sec after warn the user
+
+# shutdown -k  -- Don't really shutdown; only warn
+
+# shutdown -r -t 5 -- Reboot after shutdown
+
+# shutdown -h -t 5 -- Halt after shutdown
+
+# shutdown -f now -- Skip fsck (File System Check) on reboot
+
+# shutdown -F now -- Force fsck on reboot
+
+# shutdown -c -- Cancel the already waiting shutdown process.
+
+Read : man shutdown

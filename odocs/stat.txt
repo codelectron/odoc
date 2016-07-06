@@ -1,0 +1,22 @@
+One Day One Command 
+===================
+
+stat -- Show the File/File-System status.
+
+Summary:
+
+stat shows the detailed and formatted information about the file or
+file-system status, like Size, Blocks, Time Access/Modify/Change etc...
+
+Examples:
+
+$ stat myfile -- Show the status of myfile.
+
+$ stat -f myfile -- Show the status of the File-System, where this file 
+                    is resided.
+
+$ stat -t myfile -- Show the status in plain/terse form.
+
+$ stat -c "%A %U %G %s %Y %n" * -- Custom format (ls like) output.
+
+Read: man stat

@@ -1,0 +1,28 @@
+One Day One Command :-
+-------------------
+
+ls -- List directory contents
+
+Summary : 
+
+List the current directory contents and informations.
+
+Examples :
+
+$ ls  -- Alphabetically list all files and dir 
+
+$ ls -r -- Reverse order
+
+$ ls --color=always -- Output in color
+
+$ ls -F -- Files are classified with /@|= symbols
+
+$ ls -1 -- Output in single column
+
+$ ls -a -- Display hidden entries starting with .
+
+$ ls -R -- Recursive output
+
+$ ls -Q -- Enclose entry names in double quotes
+
+Read : man ls

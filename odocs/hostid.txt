@@ -1,0 +1,25 @@
+One Day One Command :-
+====================
+
+hostid - Print the numeric id for the host.
+
+Summary:
+
+It will print a 32-bit hexadecimal numerical identifier for the host
+machine. Certain product registration procedures use this number to
+brand a particular user license. The 32-bit quantity happens to be
+closely related to the system's IP address, but that isn't always the
+case.
+
+If your IP address is 192.168.14.155 then your hostid is A8C09B0E.
+
+A8 -- 168
+C0 -- 192
+9B -- 155
+0E -- 14
+
+Example:
+
+$ hostid -- Print the hostid of the current host.
+
+Read: man hostid

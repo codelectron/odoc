@@ -1,0 +1,45 @@
+One Day One Command 
+===================
+
+cdecl -- Create/Explain C Type Declarations.
+
+Summary:
+
+Cdecl is a program for encoding and decoding C type declarations in
+English language. It can run in interactive (shell-like) and
+non-interactive mode (command line arguments).
+
+In the interactive mode, cdecl will wait for your input in "cdecl> " 
+prompt. Enter "quit or exit" to exit. Enter "?" for help.
+
+Examples:
+
+$ cdecl -- Start the cdecl in interactive mode.
+
+cdecl> quit -- Exit cdecl.
+
+cdecl> declare i as static integer 
+
+cdecl> declare p as extern pointer to int
+
+cdecl> declare p as array of int
+
+cdecl> declare fun as function returning void
+
+cdecl> declare _exit as function (retvalue as int) returning void
+
+cdecl> explain int **p
+
+cdecl> explain int *p[]
+
+cdecl> explain void (*signal())()
+
+cdecl> explain int (*f)()
+
+cdecl> cast i into char
+
+cdecl> cast p into pointer to int
+
+cdecl> cast i into pointer to void
+
+Read: man cdecl

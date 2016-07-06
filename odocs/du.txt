@@ -1,0 +1,36 @@
+One Day One Command 
+===================
+
+du -- Print the file's disk space usage.
+
+Summary:
+
+du summarize disk usage of each file/Dir, recursively for directories
+and print the info in different format. Normally the size is printed
+in units of 1024 bytes.
+
+Examples:
+
+$ du -- Show the disk usage of present and it's all sub Dirs
+        (recursively).
+
+$ du -a -- Show the files size also along the Dir.
+
+$ du -h -- Show sizes in the Human readable format (1K, 2M).
+
+$ du -S -- Don't include the Sub Dirs size.
+
+$ du -s -- Show total size of the current Dir. No detailed listing.
+
+$ du -X MyExcPat -- Exclude all files, which is matching with the 
+                    patterns(*txt, *awk, *.c) in the 'MyExcPat' file.
+
+$ du --exclude="*.pdf" -- Exclude all PDF files.
+
+$ du --max-depth=2 -- Travel only 2 level depth below the current Dir.
+
+$ du -b MyFile -- Show the 'MyFile' size in Bytes.
+
+$ du -h MyDir -- Show the 'MyDir' size in Human readable form.
+
+Read: man du

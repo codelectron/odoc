@@ -1,0 +1,50 @@
+One Day One Command :-
+====================
+
+cut -- CUT a specified part form the file and Print it on stdout.
+
+Summary : 
+
+Print selected parts of lines from each file(s) to standard output.
+
+Examples :
+
+Create file1 with 10 columns (separated by TAB) of data for 10 lines 
+and file2 with 10 columns (separated by space) of data for 10 lines.
+
+$ cut -b2 file1 -- Print only the byte in 2 position. Tab & Backspace
+                   are treated like a 1 byte char.
+
+$ cut -b1,3,5 file1 -- Print only the bytes in 1,3 & 5 positions.
+
+$ cut -c2 file1 -- Print only character in 2nd position. Normally 
+                   same as -b option. But you can feel the difference 
+                   only with multi-byte encodings (Unicode).
+
+$ cut -f5 file1 -- Print only the 6th field. TAB is default separator.
+
+$ cut -f4- file1 -- Print from 4th field to last field.
+
+$ cut -f-5 file1 -- Print from 1st field to 4th field.
+
+$ cut -d' ' -f3-5 file2 -- Print only the fields from 3 to 5, which is 
+                           separated by spaces.
+
+$ cut -s -d' ' -f2 file2 -- Don't print lines that don't contain the 
+                            delimiter,space (line without a delimiter 
+                            is printed verbatim).
+
+$ cut -f2-5,7-9 --output-delimiter=',' file1 -- In the output, field
+                   will be separated by "," (Not by the default one).
+
+Note:
+1) Use one, and only one of -b, -c or -f.  
+2) Range or many ranges can be separated by commas. 
+3) Range of Bytes/Chars/Fields can specified like this:
+   
+   N   == Only Nth byte, character or field.
+   N-  == From Nth byte, character or field, to End of line.
+   N-M == From Nth to Mth (included) byte, character or field.
+   -M  == From 1st to Mth (included) byte, character or field.
+
+Read : man cut

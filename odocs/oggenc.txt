@@ -1,0 +1,30 @@
+One Day One Command 
+===================
+
+oggenc -- Encode audio into the Ogg Vorbis format.
+
+Summary:
+
+Ogg Vorbis is a new audio compression format. It is different from
+these other formats because it is completely free, open & unpatented.
+It is roughly comparable to other formats used to store & play digital
+music, such as MP3, VQF, AAC, and other digital audio formats.
+
+oggenc reads audio data in either raw, WAV or AIFF format and encodes
+it into an Ogg Vorbis stream. 
+
+Examples:
+
+$ locate .wav -- Search for some WAV files in your system.
+
+$ oggenc snd.wav -- Produces output as snd.ogg.
+
+$ oggenc in.wav -o out.ogg -- Produces output as out.ogg.
+
+$ oggenc in.wav -q 6 -o out.ogg -- Produces the output with specified 
+                         quality, -1 (low) & 10 (high), 3 is default.
+
+$ oggenc snd.wav -t "MyTrack1" -a "MyName" -l "MySound" -o snd.ogg --
+                                   Add Track info in the output file.
+
+Read: man oggenc

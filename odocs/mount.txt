@@ -1,0 +1,57 @@
+One Day One Command :-
+====================
+
+mount  -- Mount/Attach a File System to a File Tree.
+
+Summary :
+
+All files accessible in a Unix system are arranged in one big tree,
+the file hierarchy, rooted at /.  These files can be spread out over
+several devices. The mount command serves to attach the file system
+found on some device to the big file tree.
+
+Examples :
+
+$ mount  -- List all mounted FSs (FileSystem).
+
+$ mount -l -- List all mounted FSs with Labels.
+
+# mount -a -- Mount all entries in the /etc/fstab.
+
+# mount /mnt/cdrom -- Mount known device to cdrom dir. Mount will find 
+                      the cdrom device (/dev/hdX) from /etc/fstab.
+
+# mount /dev/hdd -- Mount device at the known place. Mount will find 
+                    the mount point (Ex. /mnt/cdrom) from /etc/fstab.
+
+# mount -t ext2 /dev/hda2 /tmp/dir1 -- Mount a Linux partition at 
+                                       /tmp/dir1.
+
+# mount -t vfat -o rw,umask=0007 /dev/hda1 /mnt/C -- Mount Windows FAT  
+partition
+
+# mount -o rw /dev/fd0 /mnt/floppy/ -t vfat -- Mount FAT format floppy 
+in Read and write mode.
+
+# mount -t nfs 192.168.14.155:/home/one /home/one -- Mount NFS
+partition, from a machine with particular IP, to /home/one dir.
+
+# mount /tmp/fdimage /mnt/test1 -t msdos -o loop=/dev/loop3,blocksize=1024 
+-- Mount msdos Floppy disk image via loopback device.
+
+# mount /tmp/cdimg.iso /mnt/test1 -t iso9660 -o loop=/dev/loop3,blocksize=1024 
+-- Mount a CD iso image via loopback device.
+
+# mount --bind /mnt/cdrom /mnt/test1 -- Mount the /mnt/cdrom in
+another location. So you can access in the FS in two places.
+
+# mount -t tmpfs none /mnt/test1 -o rw,size=1m -- Mount a tmpFS 
+
+# mount -t tmpfs none /mnt/test1 -o remount,ro,size=1m -- Remount the 
+same partition with different permission.
+
+# mount -t ntfs /dev/sda1 /mnt -- Mount a NTFS (Default - Read Only)
+
+# umount /mnt/test1 -- Unmount the file system from /mnt/test1.
+
+Read : man mount, fstab

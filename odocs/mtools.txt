@@ -1,0 +1,44 @@
+A Team of GLUG-Trichy Guys have developed a GTK-Binding for 
+OCTAVE. Recently Version 0.3 is released. For more info
+http://octave-gtk.sourceforge.net/.
+
+One Day One Command :-
+====================
+
+mtools - Utilities to access DOS disks in Unix
+
+Summary :
+
+Mtools is a public domain collection of tools to allow Unix systems to
+manipulate DOS files: Read, Write, Delete & Move around files on an
+DOS file system (Default floppy). Each program attempts to emulate the
+MS-DOS equivalent command.
+
+Example:
+
+$ mdir -- List files from the floppy.
+
+$ minfo -- Get DOS FS info.
+
+$ mdu dir1 -- Space usage report of dir1.
+
+$ mcopy myfile a: -- Copy DOS files to/from Linux.
+
+$ mcd dir1 -- Change the current dir to a:/dir1.
+
+$ mmove file1 file2 -- Move/Rename an DOS file/subdir.
+
+$ mdel file -- Del a DOS file from floppy.
+
+$ mdeltree dir -- Del a DOS dirtree from floppy.
+
+$ mformat --  Create a DOS FS in a formatted floppy.
+
+$ mlabel -- Make DOS volume label.
+
+Note:
+1) More tools are available in MTool Set.
+2) Behavior of MTools will change depending upon the config 
+   /etc/mtools.conf.
+
+Read: man mtools

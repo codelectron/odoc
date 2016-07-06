@@ -1,0 +1,38 @@
+One Day One Command :-
+====================
+
+chgrp -- Change the group ownership.
+
+Summary : 
+
+`chgrp' changes the group ownership of each given file(s) to the
+specified group (group name or a numeric group id).
+
+Examples :
+
+$ chgrp grp1 file1 -- Change the group ownership to grp1. No change in
+                      the user ownership.
+
+$ chgrp grp1 f1 f2 f3 -- Same as above, but for files f1, f2 and f3.
+
+$ chgrp 400 file1 -- Change the group ownership to a group, GID:400.
+
+$ chgrp -R grp1 dir1 -- Recursively change group ownership of Dir and 
+                        their contents. 
+
+$ chgrp -c usr1 f1 f2 f3 -- Show verbose output only when a change is
+                            made.
+
+$ chgrp -v usr1 f1 f2 f3 -- Show verbose output for every file 
+                            processed.
+
+$ chgrp -f usr1 f1 f2 f3 -- Force/Silent/Quiet. Do not print error 
+                            messages.
+
+$ chgrp --reference=that this -- Set the 'that' file's group to 'this'.
+
+Note: Instead of Group name, Group ID can be used.
+
+$ echo $GROUPS -- Show Group ID.
+
+Read : man chgrp

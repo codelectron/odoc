@@ -1,0 +1,24 @@
+One Day One Command 
+===================
+
+mpstat -- Report processor(s) related statistics.
+
+Summary:
+
+The mpstat command writes to standard output activities for each
+available processors, processor 0 being the first one. Global average
+activities among all processors are also reported.
+
+Examples:
+
+$ mpstat -- Show statistics about all processors.
+
+$ mpstat -P 1 -- Show the statistics info about processor 1.
+                 (Note: 0 is 1st, 1 is 2nd, ...)
+
+$ mpstat 5 -- Show the statistics for every 5 sec.
+
+$ mpstat 5 5 -- Show 5 reports of statistics for all processors at 5
+               second intervals and calculate the average at the end.
+
+Read: man mpstat

@@ -1,0 +1,35 @@
+One Day One Command :-
+====================
+
+w -- show Who is doing What
+
+Summary :
+
+w is part of the procps package. w shows information about the users
+currently on the machine, and their processes. The header shows, in
+this order, the current time, Uptime, no. of current users, & load
+averages for the past 1, 5, and 15 minutes.
+
+JCPU -- The time used by all processes attached to the tty. It does
+        not include past background jobs, but does include currently
+        running background jobs.
+
+PCPU -- The time used by the current process, named in the "WHAT".
+
+
+Examples :
+
+$ w -- Show header, users and processes Information.
+
+$ w bharathi -- Show information about bharathi (user) only.
+
+$ w -h -- Don't show header info.
+
+$ w -f -- Don't show FROM (remote hostname) field.
+
+$ w -s -- Short format. Don't show login, JCPU and PCPU times.
+
+$ w -u -- Ignores the username while figuring out the current process 
+          and CPU times of the current tty.
+
+Read : man w

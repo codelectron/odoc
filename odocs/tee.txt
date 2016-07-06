@@ -1,0 +1,37 @@
+One Day One Command :-
+====================
+
+tee - Read from stdin and write to stdout and files
+
+Summary : 
+
+Tee will copy the stdin to file(s) and also to stdout output. Actually
+tee is doing the redirection. The following ASCII art will shows "How
+Tee works".
+
+StdIn >---+---> StdOut
+          |
+          |
+          |
+          V 
+        File(s)
+
+Examples :
+
+$ tee   -- Read from stdin and write into stdout.
+
+$ tee f1 f2 -- Read from stdin and write into stdout, f1 & f2.
+
+$ tee -i myfile -- Same as above. But it will ignore the interrupt 
+                   signals (Ex: ctrl+C).
+
+$ tee -a myfile -- Read from stdin and write into stdout & append to
+                   myfile.
+
+$ who | tee myfile -- Store the output of who to myfile and also write 
+                      to stdout.
+
+$ ls -1 | tee f1 f2 | wc -l -- Store the ls output in f1, f2 & write
+                               the count of all files on stdout.
+
+Read : man tee

@@ -1,0 +1,34 @@
+One Day One Command :-
+====================
+
+useradd -- Create a new user.
+
+Summary :
+
+useradd creates a new user with specified options like username, home
+dir, group details, password, etc ...
+
+Example:
+
+# useradd usr1 -- Add new user usr1 with default settings.
+
+# useradd usr1 -d /home2/usr1 -- Create the new user's home dir in 
+                                 /home2
+
+# useradd usr1 -e 2005-04-30 -- From 30/4/2005 the user acc will be
+                                disabled.
+
+# useradd usr1 -f 6 -- After passwd expires, system will allow the 
+                       user to login for 6 days with a warning to 
+                       change his passwd.
+
+# useradd usr1 -g staff -G student,lect, prof -- Set his initial group
+                 as staff and sublimentry group as office, lect, prof.
+
+# useradd usr1 -p $1$d8 -- Create the usr1 with the given encrypted
+                           password. For No passwd, acc disabled.
+
+# useradd usr1 -s /bin/csh -- Set C Shell as the default login 
+                              shell for the usr1.
+
+Read: man useradd

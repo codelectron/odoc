@@ -1,0 +1,26 @@
+One Day One Command 
+===================
+
+script -- Record the user's activities on a terminal.
+
+Summary:
+
+Script makes a typescript/record of everything printed on your
+terminal. It is useful for anyone, who need a hard copy record of an
+interactive session as proof, and the typescript text file can be
+printed.
+
+Press Ctrl+D/exit/logout to Stop the Script Program.
+
+Examples:
+
+$ script -- Start the recording in a file (Default File Name 
+            is typescript).
+
+$ script MyFile -- Record the output in MyFile.
+
+$ script -a -- Record the output in Appending Mode.
+
+$ cat typescript -- Show the recorded content.
+
+Read: man script

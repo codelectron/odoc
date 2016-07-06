@@ -1,0 +1,31 @@
+One Day One Command 
+===================
+
+openvt -- Open a new Virtual Terminal and start a program on it.
+
+Summary:
+
+In GNU/Linux OS, be default, 6 virtual text mode console terminals
+will be running. User can switch between this terminals using Left 
+Side Ctrl + Alt + FunKey(1 - 6).
+
+openvt will find the first available VT, and run the given command on
+it. If no command is specified then the $SHELL is used.
+
+Examples:
+
+$ openvt -- Start a shell on the next free VT. Try Alt+F<1-12> to see 
+            new shell session.
+
+$ openvt -v -- Same as above, with extra output.
+
+$ openvt -l bash -- Start the shell as a login shell on next free VT.
+
+$ openvt ls -- Run the 'ls' on the next free VT.
+
+$ openvt -s ls -- Same as above. But Switch to the new VT when 
+                  starting the command.
+
+# openvt -c 9 ls -- Run the 'ls' on the 9th VT.
+
+Read: man openvt

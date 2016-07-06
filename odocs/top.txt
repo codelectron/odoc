@@ -1,0 +1,43 @@
+One Day One Command :-
+====================
+
+top -- Display TOP Intensive processes
+
+Summary :
+
+TOP provides an ongoing look at processor activity in real time. TOP
+list the process, which is sorted based on the CPU usage of the each
+task on the system. It can also sort the tasks by memory usage & run
+time.
+
+Examples :
+
+$ top -- List the most CPU-Intensive processes.
+
+$ top -q -- Runs with the highest possible priority.
+
+$ top -d 6 -- List will be updated every 6 Sec.
+
+$ top -n 5 -- Update the list for 5 times and then exit.
+
+$ top -p 100 -p 200 -- Monitor only process with PID 100 & 200.
+                       Maximum 20 processes can be monitored.
+
+$ top -s -- Run in secure mode (Disables the potentially dangerous
+            interactive commands).
+
+$ top -c -- List the process with command line options instead of the
+            command name only (default).
+
+$ top -b -n 5 > myfile -- Run in Batch mode & dump the output in myfile. 
+                
+NOTE: 
+
+1) Batch Mode is useful for sending output from top to other programs
+or to a file. It runs until it produces the number of iterations
+requested with the n option or until killed.
+
+2) TOP supports few interactive commands to change the output formats 
+like changing update time and few actions like killing a process.
+
+Read : man top

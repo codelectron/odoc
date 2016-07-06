@@ -1,0 +1,35 @@
+One Day One Command 
+===================
+
+bg -- Place a job in BackGround
+
+Summary:
+
+Normally user can run a job in background, by adding & at end of the 
+command (ex: sleep 10 &). 
+
+bg is a shell command. It is used to move a job from foreground to the
+background, as if it had been started with `&'. If JOB is not present,
+the shell's notion of the current job is used.
+
+Examples:
+
+$ sleep 100 -- Start a dummy job in foreground.
+  Press Ctrl+z to stop the current job.
+
+$ bg -- Move the last stopped job to background.
+
+$ sleep 150 -- Dummy job 1
+  Press Ctrl+z to stop the current job.
+
+$ sleep 140 -- Dummy job 2
+  Press Ctrl+z to stop the current job.
+
+$ sleep 130 -- Dummy job 3
+  Press Ctrl+z to stop the current job.
+
+$ jobs -- List all active jobs.
+
+$ bg 2 -- Move the 2nd active job to background.
+
+Read: help bg, jobs

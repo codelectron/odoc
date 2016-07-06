@@ -1,0 +1,27 @@
+One Day One Command 
+===================
+
+whatis -- Search the whatis database for complete words.
+
+Summary:
+
+Whatis DB contains the name and one line description about all
+commands man pages. whatis searches for keywords and displays the
+result(s) on the standard output. Only complete word matches are
+displayed.
+
+Examples:
+
+$ whatis ls -- Show small info about ls command.
+
+$ whatis perl -- Show small info about perl.
+
+$ whatis gcc -- Show small info about gcc command.
+
+$ whatis printf -- Show small info about printf.
+
+$ whatis socket -- Show small info about socket.
+
+$ whatis compile -- Just try (Error).
+
+Read: man whatis

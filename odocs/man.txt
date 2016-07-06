@@ -1,0 +1,13 @@
+One Day One Command :-
+-------------------
+
+man - Format and display the 'man'ual pages.
+
+Summary : 
+
+Most of the Linux commands are comes with a specially formatted
+manuals, which explains "how to use the command and list options
+etc..". 'man' is used to view the manual page. This command has 
+no .of useful options like -f, -k, -K, ...
+
+Read    : man man

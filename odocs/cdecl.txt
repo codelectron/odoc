@@ -1,0 +1,33 @@
+One Day One Command 
+===================
+
+c++decl -- Create/Explain C++ Type Declarations.
+
+Summary:
+
+Cdecl is a program for encoding and decoding C/C++ type declarations
+in English language. Both cdecl and c++decl are same program. cdecl
+will use C notation and c++decl use C++. It can run in interactive
+(shell-like) and non-interactive mode (command line arguments).
+
+In the interactive mode, cdecl will wait for your input in "c++decl> " 
+prompt. Enter "quit or exit" to exit. Enter "?" for help.
+
+Examples:
+
+$ c++decl -- Start the c++decl in interactive mode.
+
+c++decl> quit -- Exit c++decl.
+
+c++decl> declare i as static integer 
+
+c++decl> declare x as reference to pointer to character
+
+c++decl> declare foo as pointer to member of class X int
+
+c++decl> explain class Y *(X::*foo)(arg1, arg2)
+
+$ c++decl -c declare signal as function returning int -- Create 
+                            compilable C or C++ code as output.
+
+Read: man c++decl

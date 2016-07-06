@@ -1,0 +1,30 @@
+One Day One Command 
+===================
+
+finger -- User information lookup program.
+
+Summary:
+
+finger will lookup and displays information about users in the local 
+or remote system.
+
+Example:
+
+$ finger -- Show currently logged on user's info.
+
+$ finger user1 -- Show info about the user1.
+
+$ finger -s -- Show more info about the currently logged on users.
+
+$ finger -l -- Show all info about the users in multi-lines.
+
+$ finger @host2 -- Show all current logged on users info.
+
+$ finger user2 at host2 -- Show info about user2 on host2.
+
+Note:
+1) User can add his/her plans in ~/.plan and projects details in 
+   ~/.project file. Finger will show this in output.
+2) Remote host should run fingerd to support remote fingering.
+
+Read: man finger

@@ -1,0 +1,28 @@
+One Day One Command (By Mr Arpit Sud)
+======================================
+
+composite -- Composite images together.
+
+Summary:
+
+Composite is used composite/combine/mix images to create new images.
+It is a part of the ImageMagick utilities (www.imagemagick.org).
+
+Examples:
+
+$ composite A.jpg B.jpg C.jpg -- Composite A with B and store the 
+                                 result in C.
+
+$ composite -compose difference A.png B.png C.png -- Compute the 
+              difference between A and B, and store the result in C.
+
+$ composite -geometry +100+150 A.png B.png C.png -- Place A at 
+             specified location with B and store the result in C.
+
+$ composite -dissolve 20 A.jpg B.jpg C.jpg -- Dissolve A 20% and mix 
+                                   with B, and store the result in C.
+
+$ composite -rotate 40 A.jpg B.png C.gif -- Rotate A 40 Degree and mix 
+                                    with B and store the result in C.
+
+Read: man composite

@@ -1,0 +1,39 @@
+One Day One Command :-
+====================
+
+sar -- System Activity Report
+
+Summary:
+
+The sar command writes to standard output the contents of selected
+cumulative activity counters in the operating system. The accounting
+system, based on the values in the count and interval parameters,
+writes information the specified number of times spaced at the
+specified intervals in seconds.
+
+Example:
+
+$ sar -- Print the CPU Utilization report.
+
+$ sar -A -- Print all info in report format.
+
+$ sar -b -- Report I/O and transfer rate statistics.
+
+$ sar -e 12:00:00 -- Print report from 00Hr to 12Hr
+
+$ sar -s 10:30:00 -- Print report from 10:30AM to now.
+
+$ sar -u 2 5 -o out.file -- Report CPU utilization for each 2 seconds 
+                            & write the 5 lines output to out.file.
+
+$ sar -f out.file -- Generate the report from the out.file.
+
+$ sar -h -f out.file -- Print file contents in a format that can
+      easily be handled by pattern processing commands (ex: awk)
+
+$ sar -r -n DEV -f /var/log/sa/sa01 -- Display memory, swap & network
+                           statistics saved in daily log file 'sa01'.
+
+$ sar -R 2 5 -- Report memory statistics for each 2Sec for 5times.
+
+Read: man sar

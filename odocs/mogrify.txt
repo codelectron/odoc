@@ -1,0 +1,25 @@
+One Day One Command (By Mr Arpit Sud)
+======================================
+
+mogrify -- Mogrify an image
+
+Summary:
+
+Mogrify transforms an image or a sequence of images. These transforms
+include image scaling, image rotation, color reduction, and others.
+
+NOTE: The transmogrified image overwrites the original image, unless
+an option such as -format causes the output filename to be different
+from the input filename.
+
+It is a part of the ImageMagick utilities (www.imagemagick.org).
+
+Examples:
+
+$ mogrify -format jpeg *.tiff -- Convert all the TIFF files in a 
+                                 current Dir to JPEG.
+
+$ mogrify -resize 120x120 +profile '*' *.png -- Convert all PNG files 
+                                                to 120x120 Size.
+
+Read: man mogrify

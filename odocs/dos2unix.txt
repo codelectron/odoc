@@ -1,0 +1,26 @@
+One Day One Command (By Vishravars Ramasubramanian)
+===================================================
+
+dos2unix -- DOS/MAC to UNIX text file format converter.
+
+Summary:
+
+Each OS will indicate the line end using Line Feed (LF,10) or Carriage
+Return (CR,13). So when tranfering a file from DOS to Linux, you have
+to convert the Line end from DOS format to Linux format.
+
+dos2unix will convert the DOS/MAC Text file to Unix format.
+
+Unix uses LF as line end, Windows/DOS uses CR/LF and MacOS uses CR.
+
+Examples:
+
+$ dos2unix dos.txt -- Convert and replace dos.txt.
+
+$ dos2unix -n dos.txt gnu.txt -- Convert dos.txt and write into
+                                 gnu.txt
+
+$ dos2unix -k dos.txt -- Convert and replace a.txt while keeping 
+                         original date stamp.
+
+Read: man dos2unix

@@ -1,0 +1,27 @@
+One Day One Command :-
+====================
+
+paste - Merge lines of files.
+
+Summary :
+
+Paste write the lines from files in parallel and sequential manner in
+the screen. By default, Lines will separated by a TAB character.
+
+Examples :
+
+$ paste f1 f2 f3 -- Contents of the f1,f2 & f3 will be pasted in 
+                    parallel and lines are separated by TABs.
+
+$ paste -d'#' f1 f2 f3 -- Same as above. But # is the separator.
+
+$ paste -d'@#' f1 f2 f3 -- Same as above. But the separator for f1 & 
+                           f2 is @ and for f2 & f3 is #.
+
+$ paste -s f1 f2 -- Paste one file at a time instead of in parallel 
+                    (as in above commands)
+
+$ paste num word > myfile -- Paste the content of num & word and write 
+                             the output into myfile.
+
+Read : man paste

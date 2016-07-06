@@ -1,0 +1,24 @@
+One Day One Command :-
+---------------------
+
+echo - Display a line of text on the screen
+
+Summary: 
+
+Echo is used to show a line of text on the screen with limited Esc
+sequence (BELL, Backspace, H-Tab, V-Tab,...) handling capabilities.
+
+Example:
+
+$ echo  -- print a empty line
+$ echo "Bharathi\nMidas" -- Just print the Line
+$ echo -e "Bharathi\n\tMidas" -- Interpret and print the Line
+$ cat nums
+  1
+  2
+  3
+
+$ echo -n `cat nums` -- Print the file content with-out new line char.
+  1 2 3 
+
+Read: man echos

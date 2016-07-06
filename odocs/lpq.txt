@@ -1,0 +1,25 @@
+One Day One Command
+===================
+
+lpq --  Show printer queue status
+
+Summary:
+
+lpq shows the current print queue status on the named printer. Jobs
+queued on the default destination will be shown if no printer/class 
+is specified on the command-line.
+
+Example:
+
+$ lpq -- Show the default printer Queue status.
+
+$ lpq -P prn2 -- Show the printer PRN2 status.
+
+$ lpq -a -- Show all printers status.
+
+$ lpq -l -- Show in long format.
+
+$ lpq +5 -- Show the status of the default printer status for 
+            every 5 Sec interval, until queue become empty.
+
+Read: man lpq

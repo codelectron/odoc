@@ -1,0 +1,26 @@
+One Day One Command :-
+====================
+
+cal - Displays a calendar
+
+Summary : 
+
+Cal displays a simple calendar. If arguments are not specified, 
+the current month is displayed. 
+
+Examples :
+
+$ cal -- Displays current month
+
+$ cal -3 -- Display prev & current & next month output.
+
+$ cal -y -- Display a calendar for the current year
+
+$ cal -m -- Display Monday as the first day of the week.
+            Sunday is default.
+
+$ cal 2005 -- Display a calendar for the year 2005.
+
+$ cal 2 2005 -- Display a calendar for the month of Feb 2005.
+
+Read : man cal , gcal

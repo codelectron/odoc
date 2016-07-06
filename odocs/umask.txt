@@ -1,0 +1,26 @@
+
+One Day One Command 
+===================
+
+umask -- Default file-creation permission mask.
+
+Summary:
+
+umask is used to set the default permission for files, which is
+created by the user. To get the actual default permissions, the 
+mask should be XOR-ed with 0666 for files and 0777 for folders.
+
+For example, if umask is 0002, then (0002 ^ 0666) = 0664 is the 
+default permission for files.
+
+Examples:
+
+$ umask -- Show the mask value in Number form.
+
+$ umask -S -- Show the mask value in Symbolic form.
+
+$ umask 0022 -- Set the default mask as 0022.
+
+$ umask u=rwx,g=rx,o=rx -- Same as above, in Symbolic mode.
+
+Read: help umask

@@ -1,0 +1,19 @@
+One Day One Command :-
+====================
+
+groupmod -- Modify a group
+
+Summary : 
+
+The groupmod command modifies the system account files to reflect the
+changes that are specified on the command line.
+
+Example:
+
+# groupmod -g 600 mygrp -- Change the mygrp Group ID to 600.
+
+# groupmod -n mygrp1 mygrp -- Change the mygrp name to mygrp1.
+
+Group informations are stored in /etc/group files.
+
+Read: man groupmod

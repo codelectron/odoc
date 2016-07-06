@@ -1,0 +1,38 @@
+One Day One Command :-
+====================
+
+kill -- Sends a signal to processes.
+
+Summary :
+
+The command kill sends the specified signal to the specified process
+or process group.  If no signal is specified, the TERM signal is sent.
+Signals are used for inter process communications.
+
+Examples :
+
+$ kill -l -- Print a list of signal names with numbers.
+
+$ kill -l SIGIO -- Print the number for SIGIO signal.
+
+$ kill -l 9 -- Print the Name for the Signal number 9.
+
+$ kill 100 200 -- Send TERM signal to processes with PID 100 and 200.
+
+$ kill -s 9 100 -- Send KILL signal to process with PID 100.
+
+$ kill -n SIGKILL 100 -- Same as above
+
+$ kill -SIGKILL 100 -- Same as above.
+
+$ kill -9 100 -- Same as above.
+
+$ kill -9 -1 -- Kill all your login sessions. But Not the current one.
+
+NOTE:
+1) Two kill commands are available. One is built-in SHELL (default)  
+   and 2nd is in /usr/bin/kill.
+
+2) We can use either Signal Name or Number.
+
+Read : man kill, signal(7)

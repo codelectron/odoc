@@ -1,0 +1,35 @@
+One Day One Command 
+===================
+
+chattr -- Change File Attributes on a Ext2 File System.
+
+Summary:
+
+Ext2 File System(FS) is providing few extra bit to set some special
+attribute to each file in the FS. 'chattr' command is used to changes
+the file's special attributes on a Ext2 FS.
+
+Examples:
+
+$ chattr +A myFile -- Don't change the Access time of this file.
+
+$ chattr -V +A myFile -- Same as above. But show verbose output.
+
+$ chattr +c myFile -- Save the file in compressed mode.
+
+# chattr +i myFile -- Make the file as Read-Only.
+
+$ chattr +s myFile -- Mark the file as secrete. During deletion its 
+                      blocks are Zeroed.
+
+$ chattr +u myFile -- Mark for undeletion. If this file is deleted, 
+                      user can ask for undelete.
+
+$ chattr +S myFile -- The changes in the file are written
+                      synchronously on the disk.
+
+# chattr -i myFile -- Remove the Read-Only Mark.
+
+$ chattr =Ac myFile -- Set only A & c bit. Clear all other bits.
+
+Read: man chattr

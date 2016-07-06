@@ -1,0 +1,37 @@
+One Day One Command
+===================
+
+lsb_release  -- Show Linux Standard Base and Distribution info.
+
+Summary:
+
+If the installation is LSB compliant, the "/etc/lsb-release"  file
+should contain the LSB_VERSION field and other optional fields like
+DISTRIB_ID, DISTRIB_RELEASE, DISTRIB_CODENAME, DISTRIB_DESCRIPTION.
+
+lsb_release will read the above config file and show the details in 
+different format. It is useful command to find your distribution 
+informations.
+
+Example:
+
+$ lsb_release -- Show the LSB version number.
+
+$ lsb_release -i -- Display the distributor ID or Name.
+
+$ lsb_release -d -- Display the single line text description of the 
+                    distribution.
+
+$ lsb_release -r -- Display the release number of the distribution.
+
+$ lsb_release -c -- Display the distribution code-name.
+
+$ lsb_release -a -- Display all of the above information.
+
+$ lsb_release -s -- Show only field values, not the filed name.
+
+$ lsb_release -ds -- Show only field values, not the filed name.
+
+$ lsb_release -as -- Show in short format.
+
+Read: man lsb_release

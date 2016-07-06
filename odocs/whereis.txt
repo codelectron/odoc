@@ -1,0 +1,33 @@
+MayaVi - A Free, Cross Platform, Easy to use GUI based scientific data
+visualizer, written in Python VTK, developed by Dr Prabhu Ramachandran
+(Ex Co-Ordinator - ILUGC). Links: http://mayavi.sourceforge.net/
+
+One Day One Command :-
+====================
+
+whereis -- Locate the bin, src & man page for a file.
+
+Summary :
+
+'whereis' locates source/binary and manuals sections for specified
+files. whereis will attempts to locate the desired program in a list
+of standard Linux places.
+
+Example:
+
+$ whereis ls -- Display the bin, src(if avail) and man page locations.
+
+$ whereis -b ls -- Show only bin file location.
+
+$ whereis -m ls -- Show only man page location.
+
+$ whereis -s ls -- Show only source file location.
+
+$ whereis -u -M /usr/share/man/man1 -f route -- Find the bin file 
+                location and search for man page in only man1 dir.
+
+$ whereis -u -M /usr/man/man1 -S /usr/src -f * -- Find all files in
+      /usr/bin which are not documented in /usr/man/man1 with source 
+      in /usr/src.
+
+Read: man whereis

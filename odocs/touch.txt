@@ -1,0 +1,30 @@
+One Day One Command :-
+-------------------
+
+touch - Change File Timestamps
+
+Summary : 
+
+Update the access and modification times of each 
+FILE to the current time.
+
+Examples :
+
+$ touch myfile -- change the time stamp to current time.
+                  If myfile is not there then touch will 
+                  create it.
+
+$ touch -c myfile -- Same as above. But If myfile is not
+                     there, then it won't create it.
+
+$ touch -r f1 f2 -- Set f1's time to f2 instead of current time
+
+$ touch -a myfile -- Change only access time.
+
+$ touch -m myfile -- change only the modification time
+
+$ touch -t 200412251122.33 -- set this time instead of current time
+
+$ ls -lu myfile -- Shows the last access time
+
+Read : man touch

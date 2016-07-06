@@ -1,0 +1,18 @@
+One Day One Command :-
+---------------------
+
+date -  Print & set the system data & time 
+
+Summary: 
+
+date will print the time information in different formats and we can 
+also make a custom formats using the options.
+
+Example:
+
+$ date == print the current date and time
+$ date -d '3year ago' == Same date but 3 yr ago
+$ date --set='-10 minutes' == Reduce 10 min in the current time
+$ date '+%b %_e %a %X %Z %Y' == Current date in custom format.
+
+Read : info date

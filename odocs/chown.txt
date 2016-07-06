@@ -1,0 +1,58 @@
+One Day One Command :-
+====================
+
+chown -- Change file Owner and Group.
+
+Summary : 
+
+`chown' changes the user and/or group ownership of each given file to
+the specified user and/or group.
+
+Examples :
+
+$ chown usr1 file1  -- Make usr1 as the owner of the file1. No 
+                       change in the group.
+
+$ chown usr1 f1 f2 f3 -- Make usr1 as owner for f1, f2 and f3.
+
+$ chown usr1.grp1 file1 -- Change owner as usr1 and group ad grp1 of 
+                           the file1.
+
+$ chown usr1:grp1 file1 -- Same as above. But `:' in place of the `.' 
+                           separator.
+
+$ chown 500:400 file1 -- Set a user, Whos user id is 500, as the owner 
+                         and a group, which id is 400, as the group.
+
+$ chown usr1. file1 -- No group is specified after DOT. So usr1's 
+                       login group taken as group.
+
+$ chown .grp1 file1 -- Only group will change
+
+$ chown -R usr1:grp1 dir1 -- Recursively change ownership of Dir and 
+                             their contents. 
+
+$ chown -c usr1 f1 f2 f3 -- Show verbose output only when a change is
+                            made.
+
+$ chown -v usr1 f1 f2 f3 -- Show verbose output for every file 
+                            processed.
+
+$ chown -f usr1 f1 f2 f3 -- Force/Silent/Quiet. Do not print error 
+                            messages.
+
+$ chown --reference=that this -- Set the 'that' file's owner and group 
+                                 to 'this' file.
+
+$ chown --from=usr1 usr2 * -- Change a file's ownership only if it's
+                              owner is usr1
+
+Note: 
+1) Separators `.' and `:' is interchangeable.
+2) No embedded white space is allowed between user and group.
+3) Instead of user/group name, User ID and Group ID can be used.
+
+$ echo $UID   -- Show User ID.
+$ echo $GROUP -- Show Group ID.
+
+Read : man chown

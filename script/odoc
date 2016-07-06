@@ -1,0 +1,11 @@
+#!/bin/bash
+CMD=$1
+CMD_FILE=$1.txt
+CMD_COUNT=$#
+if [ $CMD_COUNT -ne 1 ]; then
+	echo "Usage   : $ odoc <command>"
+	echo "Example : $ odoc ls"
+	echo "Example : $ odoc top"
+	exit 0
+fi
+echo $CMD_FILE

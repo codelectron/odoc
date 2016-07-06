@@ -1,0 +1,41 @@
+One Day One Command 
+===================
+
+netstat -- Display the Network subsystem informations.
+
+Summary:
+
+Netstat prints information about the Linux networking subsystem, like
+network connections, routing tables, interface statistics, masquerade
+connections, and multicast memberships. It is very useful monitoring
+tool.
+
+Examples:
+
+$ netstat -- List all open sockets.
+
+$ netstat -c -- Run continuously and show output for every 1 sec.
+
+$ netstat 6  -- Run continuously and show output for every 6 secs.
+
+$ netstat -r -- Display the Kernel routing table.
+
+$ netstat -i -- List the interfaces table.
+
+$ netstat -s -- Display summary statistics for each protocol.
+
+$ netstat -n -- Show the host info in IP address.
+
+$ netstat -p -- Show the program to which each socket belongs.
+
+$ netstat -l -- Show only listening sockets.
+
+$ netstat -a -- Show all sockets.
+
+$ netstat -t -- Show only TCP connections.
+
+$ netstat -u -- Show only UDP connections.
+
+To get more useful output, try this commands as a Superuser.
+
+Read: man netstat

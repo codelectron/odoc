@@ -1,0 +1,32 @@
+One Day One Command
+===================
+
+sha1sum - Compute & Check Secure Hash Algorithm Std 1 message digest.
+
+Summary:
+
+`sha1sum' computes a 160-bit checksum/fingerprint/message-digest for
+each specified file.  `sha1sum' can also determine whether a file &
+checksum are consistent. The sums are computed as described in
+FIPS-180-1 (www.itl.nist.gov/fipspubs/fip180-1.htm).
+
+Example:
+
+$ sha1sum file -- Compute and print the MD5 checksum of that file.
+
+$ sha1sum -c input.txt -- Read checksum and filename from the file and 
+                          validate checksums.
+
+$ sha1sum -w -c input.txt -- Same as above and warn if the checksums 
+                            format is wrong in the file.
+
+$ sha1sum --status -c input.txt -- Indicate the status in exit status 
+                                   code.
+
+Read: man sha1sum
+
+input.txt Format:-
+
+2bff10a7855964335a86e84efb5f4ce9c40d4cfd  file1
+e62341664decd9f55896ab3635697de29ed1077f  file2
+9b088ddc22456233a76  file3

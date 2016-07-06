@@ -1,0 +1,25 @@
+One Day One Command 
+===================
+
+lsattr -- List special file attributes on a Ext2 FS
+
+Summary:
+
+Apart from normal access permission (RWX) attributes, Ext2 File System
+(FS) is providing few extra bit to set some special attribute to each
+file in the FS.
+
+'lsattr' command is used to display the file's special attributes on a
+Ext2 or Ext3 FS.
+
+Examples:
+
+$ lsattr myFile -- List file attributes of myFile.
+
+$ lsattr -- List file attributes of all file in current Dir.
+
+$ lsattr -R -- Same as above but list Recursively.
+
+$ lsattr -a -- List all files including files that start with `.'
+
+Read: man lsattr

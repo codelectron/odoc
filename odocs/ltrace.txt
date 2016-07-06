@@ -1,0 +1,43 @@
+One Day One Command 
+===================
+
+ltrace -- Library call TRACEr
+
+Summary:
+
+ltrace is a program that simply runs the specified command until it
+exits and intercepts & records the library/system calls, which are
+called by the executed process, and the signals, which are received by
+that process. It can used study the internal flow of a program.
+
+Examples:
+
+$ ltrace sleep 1 -- Trace all Lib call of 'sleep' command.
+
+$ ltrace ls -- Trace all Lib call of 'ls' command.
+
+$ ltrace -d sleep 1 -- Print more detailed info.
+
+$ ltrace -i sleep 1 -- Print the value of the Instruction Pointer at 
+                       every lib call.
+
+$ ltrace -S sleep 1 -- Show System Call trace also.
+
+$ ltrace -S -L sleep 1 -- Show only System calls.
+
+$ ltrace -r sleep 1 -- Print a relative time-stamp with each line of
+                       the trace.
+
+$ ltrace -t sleep 1 -- Prefix each line of the trace with the time of
+                       day.
+
+$ ltrace -o file sleep 1 -- Redirect the output to a file.
+
+$ sleep 60 & -- Dummy background Job.
+
+$ ltrace -p 1234 -- Attach to the process with the PID 1234 (use dummy 
+                    job's Pid) and trace.
+
+$ ltrace -n 3 sleep 1 -- Indent each new nested call by 3 Spaces.
+
+Read: man ltrace

@@ -1,0 +1,32 @@
+One Day One Command 
+===================
+
+scp -- Secure remote file Copy Program.
+
+Summary:
+
+scp copies files between computers on a network. It uses ssh for data
+transfer, & uses the same authentication & provides the same security
+as ssh. The SSH Daemon must be running in the remote computer to do
+the scp.
+
+Examples:
+
+$ scp file1 remote at MyServer:~/ -- Copy local file1 to Home Dir of
+                                   the remote account on MyServer.
+
+$ scp -p file1 remote at MyServer:~/ -- Preserves modification times, 
+                   access times, and modes from the original file.
+
+$ scp -r MyDir remote at MyServer:~/ -- Recursively copy entire MyDir.
+
+$ scp -q file1 remote at MyServer:~/ -- Disables the default progress bar.
+
+$ scp -v file1 remote at MyServer:~/ -- Verbose Mode.
+
+$ scp remote at MyServer:~/file2 . -- Copy the file2 from remote account 
+                                   on MyServer to the local host.
+
+For Windows: SSH Client is Putty and SCP Client is WinSCP.
+
+Read: man scp

@@ -1,0 +1,32 @@
+One Day One Command
+===================
+
+lpstat -- Print CUPS status information
+
+Summary:
+
+lpstat displays status information about the current jobs, and
+printers. When run with no arguments, lpstat will list jobs 
+queued by the user.
+
+Example:
+
+$ lpstat -- List jobs queued by the user.
+
+$ lpstat -a -- Shows the accepting state of all printer queues.
+
+$ lpstat -d -- Show default printer queue.
+
+$ lpstat -p -- Shows the printers status.
+
+$ lpstat -r -- Shows whether or not the CUPS server is running.
+
+$ lpstat -s -- Shows a status summary 
+
+$ lpstat -t -- Show a detailed status
+
+$ lpstat -u user1 -- Shows the print jobs queued by user1.
+
+$ lpstat -v prn1 -- Shows printers & what device they are attached to.
+
+Read: man lpstat

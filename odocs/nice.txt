@@ -1,0 +1,32 @@
+One Day One Command 
+===================
+
+nice -- Run a command with modified priority.
+
+Summary:
+
+GNU/Linux is a multi-user and multi-tasking OS. So many processes will
+be running with some scheduling policy like Round Rabin, FIFO etc..
+High priority process will get more CPU Time.
+
+nice command is used to run the given command with its scheduling
+priority adjusted. Priority range goes from -20 (highest priority) 
+to 19 (lowest priority).
+
+Examples:
+
+$ nice -- Prints the current priority value.
+
+$ nice ls -- Increment the priority value of the ls command 
+             by 10 (Default value) and run.
+
+$ nice -n 5 ls -- Increment the priority value of the ls command
+                  by 5 and run.
+
+# nice -n -2 ls -- Decrement the priority value of the ls command by 
+                   -2 and run.
+
+NOTE: Incrementing the priority value will reduce the priority level 
+      and vice versa. Priority range is -20 (high) to 19 (low).
+
+Read: man nice

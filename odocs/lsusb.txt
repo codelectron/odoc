@@ -1,0 +1,25 @@
+One Day One Command 
+===================
+
+lsusb -- List all USB devices
+
+Summary:
+
+lsusb is a utility for displaying information about all USB buses in
+the system and all devices connected to them.
+
+Examples:
+
+$ lsusb -- List all USB device details in short form.
+
+$ lsusb -v -- List all USB device details in long form.
+
+$ lsusb -vv -- List all USB device details in very verbose form.
+
+$ lsusb -t -- Show USB device hierarchy as a tree.
+
+Note:
+lsusb will collect all USB device info from /proc/bus/usb
+List of all known USB IDs are available in /usr/share/hwdata/usb.ids
+
+Read: man lsusb

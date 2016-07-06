@@ -1,0 +1,23 @@
+One Day One Command 
+===================
+
+rec -- Record the Audio in a file.
+
+Summary:
+
+'rec' program help us record the audio input in different types (wav,
+cdr, aiff, gsm, ogg, snd, raw, ..) of sound files from the command
+line.
+
+Examples:
+
+$ rec myFile.wav -- Record the audio in WAV format.
+
+$ rec myFile.cdr -- Record the audio in CD Audio file format.
+
+$ rec -c 2 myFile.wav -- Record the audio in WAV format.
+
+$ rec -r 44100 myFile.wav -- Record the audio in WAV format with high 
+                             sample rate to get good quality.
+
+Read: man rec

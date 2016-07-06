@@ -1,0 +1,24 @@
+One Day One Command 
+===================
+
+ipcalc -- Simple IP address manipulation tool.
+
+Summary:
+
+ipcalc provides a simple way to calculate IP information for a host.  
+The various options specify what information ipcalc should display on
+standard out.
+
+Examples:
+
+$ ipcalc -b 192.168.13.175/24 -- Display the broadcast address.
+
+$ ipcalc -h 192.168.13.1 -- Display the Host name of the IP.
+
+$ ipcalc -m 192.168.13.1/25 -- Calculate and Show the netmask.
+
+$ ipcalc -p 192.168.13.1 255.255.200.0 -- Display the prefix count.
+
+$ ipcalc -n 192.168.13.1/21 -- Show the Network address.
+
+Read: man ipcalc

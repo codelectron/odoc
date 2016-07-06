@@ -1,0 +1,60 @@
+One Day One Command :-
+====================
+
+find -- Search for files in a directory hierarchy
+
+Summary:
+
+Find is useful to search in the deeply nested collection folder. It
+can execute some actions on the files, which found by it and it
+provides lot of useful options for file searching.
+
+Example:
+
+$ find -- List all files in current and its sub Dir.
+
+$ find / -name resolv.conf -- Find the resolv.conf
+
+$ find /etc -name '*conf*' -- Find all conf file /etc Dir.
+
+$ find ~/ -size 1000c -- Find files that have a size equal to 1KB.
+
+$ find ~/ -size +1500c -- Find files that have a size > 1KB.
+
+$ find ~/ -size -1500c -- Find files that have a size < 1KB.
+
+$ find ~/ -empty -- Find empty files and directories.
+
+$ find ~/ -amin -5 -- Find files accessed in last 5 minutes.
+
+$ find ~/ -atime -1 -- Find files accessed in last 24 hours.
+
+$ find ~/ -mmin -5 -- Find files modified in last 5 minutes.
+
+$ find ~/ -mtime -2 -- Find files modified in last 48 hours.
+
+$ find ~/ -size +1kc -and -mtime 2 -- Find files (Size >1K & modified 
+                                      time is 2 Days)
+
+$ find ~/ -nouser -- Find files owned by an invalid user.
+
+$ find ~/ -user user1 --  Find files owned by user1.
+
+$ find ~/ -maxdepth 2 -name 'fi*' -- Search for files starting with 
+          'fi' and don't go more 2 level down in the Dir structure.
+
+$ find ~/ -name '*.conf' -ls -- Find the all .conf files and print the 
+                                output in ls -l format.
+
+$ find ~/ -name '*.txt' -exec cat {} \; -- Find all text files and cat
+                                           the files.
+
+$ find ~/ -name '*.txt' -printf %h\\n -- Find all text file and print
+                                            the path of the each file.
+
+NOTE:
+1) In the examples, I used Home path for searching the file. You can 
+   change it to any other path.
+2) Read the man page, to know about other useful and advance options.
+
+Read: man find

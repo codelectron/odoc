@@ -1,0 +1,27 @@
+One Day One Command :-
+-------------------
+
+ulimit - Control the resources available to processes
+
+Summary : 
+
+ulimit, Bash Built-in Command, provides control over the 
+resources (Virtual Mem, Max no .of process, Core file 
+size, ...) available to processes started by the shell.
+
+If Max no. of user process is set to 5, then the particular
+user can't run more then 5 process.
+
+Examples :
+
+$ ulimit -a -- Show All current limits.
+
+$ ulimit -c -- Show core file size.
+
+$ ulimit -c 1000 -- Set new core file size.
+
+$ ulimit -u 3 -- Set max no .of user processes
+
+$ ulimit -n -- Show max open files.
+
+Read : info bash
