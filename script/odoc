@@ -1,4 +1,5 @@
 #!/bin/bash
+
 CMD=$1
 CMD_FILE=$1.txt
 CMD_COUNT=$#
